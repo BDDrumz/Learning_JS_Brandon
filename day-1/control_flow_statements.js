@@ -1,5 +1,5 @@
 //control flow with if else statements 
-/*
+
 if (condition1) {
     statement1;
   } else if (condition2) {
@@ -9,5 +9,5 @@ if (condition1) {
   } else {
     statementLast;
   }
-*/
+
 
