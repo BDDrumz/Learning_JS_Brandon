@@ -1,3 +1,4 @@
-let x;
+let x,y;
 x=5;
-console.log(x);
+y=6;
+console.log(x,y);
