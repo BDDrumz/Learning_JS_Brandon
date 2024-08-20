@@ -1,4 +1,5 @@
 // function to calculate the area of various shapes
+ 
 function area(){
   let shape = prompt("Enter a shape:")
   if(shape === "square"){
@@ -27,7 +28,7 @@ function area(){
 let A=area();
 console.log("The area is ",A);
 
-// /*const person = {
+const person = {
 //   fullName: function () {
 //     return this.firstName + " " + this.lastName;  
 
