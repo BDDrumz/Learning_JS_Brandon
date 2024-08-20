@@ -8,4 +8,4 @@ const person = {
   
   // This will return "John Doe":
   person.fullName(); 
-  
+  console.log(person.fullName());
