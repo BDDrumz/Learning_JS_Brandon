@@ -5,23 +5,13 @@
   
      <h1>JavaScript Functions</h1>
   
-        <p>In this example the fulllName method of person is <b>applied</b> on person1:</p>
-  
-        <p id="demo"></p>
+        <p>This example creates an object with 3 properties (firstName, lastName, fullName).</p>
+        <p>The fullName property is a method:</p>
+        <p class="demo"></p>
   
     
   <script>
-    const person = {
-  fullName: function() {
-    return this.firstName + " " + this.lastName;
-  }
-}
 
-const person1 = {
-  firstName:"Suipe",
-  lastName: "Brandon"
-}
-document.getElementById("demo").innerHTML = person.fullName.apply(person1); 
   </script>
    </body>
   </html>
