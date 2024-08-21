@@ -37,12 +37,17 @@ console.log(fruits3.length);
 let text = "Hello, how are you?";
 let words = text.split(" "); // Splits the string into an array of words
 console.log(words); // Output: ["Hello,", "how", "are", "you?"]
-*/
 
 //Remove multiple items from the end of an array using splice()
 //Trucate, const start = positive num
 const fruits = ["Apple", "Banana","Strawberry", "Mango", "Cherry"];
-const start = -2;
-const removedItems = fruits.splice(start);
+const removedItem = fruits.pop();
 console.log(fruits);
-console.log(removedItems);
+console.log(removedItem); 
+
+//Remove the first item from an array
+*/
+//Create a string from an array using join()
+const fruits = ["Apple", "Banana"];
+const fruitsString = fruits.join(",");
+console.log(fruitsString);
