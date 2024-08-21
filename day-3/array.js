@@ -40,6 +40,7 @@ console.log(words); // Output: ["Hello,", "how", "are", "you?"]
 */
 
 //Remove multiple items from the end of an array using splice()
+//Trucate, const start = positive num
 const fruits = ["Apple", "Banana","Strawberry", "Mango", "Cherry"];
 const start = -2;
 const removedItems = fruits.splice(start);
