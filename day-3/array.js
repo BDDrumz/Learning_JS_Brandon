@@ -61,10 +61,18 @@ const fruits = ["Apple", "Banana"];
 const newLength = fruits.push("Orange");
 console.log(fruits);
 console.log(newLength);
-*/
+
 
 //Remove the first item from an array
 const fruits = ["Apple", "Banana","Strawberry", "Mango", "Cherry"];
 const removedItem = fruits.unshift("plum");
 console.log(fruits);
 console.log(removedItem); 
+*/
+//Remove a single item by index
+const fruits = ["Apple", "Banana","Strawberry", "Mango", "Cherry"];
+const start = fruits.indexOf("Banana");
+const deleteCount = 1;
+const removedItem = fruits.splice(start, deleteCount);
+console.log(fruits);
+console.log(removedItem);
