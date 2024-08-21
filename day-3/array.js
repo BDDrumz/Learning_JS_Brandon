@@ -16,3 +16,14 @@ console.log(fruits);
 console.log(Object.keys(fruits));
 console.log(fruits.length);
 console.log(fruits[2]);
+
+//decreasing array length
+fruits.length = 0;
+console.log(Object.keys(fruits)); 
+console.log(fruits.length);
+//fruits array using array literal notation
+const fruits = ["Apple", "Banana"];
+console.log(fruits.length);
+// 'fruits2' array created using the Array() constructor.
+const fruits = new Array("Apple", "Banana");
+console.log(fruits2.length);
