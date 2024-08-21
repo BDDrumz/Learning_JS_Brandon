@@ -22,7 +22,7 @@ console.log(fruits[2]);
 fruits.length = 0;
 console.log(Object.keys(fruits)); 
 console.log(fruits.length);
-*/
+
 //fruits array using array literal notation
 const fruits = ["Apple", "Banana"];
 console.log(fruits.length);
@@ -37,3 +37,11 @@ console.log(fruits3.length);
 let text = "Hello, how are you?";
 let words = text.split(" "); // Splits the string into an array of words
 console.log(words); // Output: ["Hello,", "how", "are", "you?"]
+*/
+
+//Remove multiple items from the end of an array using splice()
+const fruits = ["Apple", "Banana","Strawberry", "Mango", "Cherry"];
+const start = -2;
+const removedItems = fruits.splice(start);
+console.log(fruits);
+console.log(removedItems);
