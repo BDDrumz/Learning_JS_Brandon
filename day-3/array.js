@@ -46,8 +46,12 @@ console.log(fruits);
 console.log(removedItem); 
 
 //Remove the first item from an array
-*/
+
 //Create a string from an array using join()
 const fruits = ["Apple", "Banana"];
 const fruitsString = fruits.join(",");
 console.log(fruitsString);
+*/
+//Find the index of an item in an array indexOf()
+const fruits = ["Apple", "Banana"];
+console.log(fruits.indexOf("Banana"));
