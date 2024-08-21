@@ -1,3 +1,4 @@
+/*
 //Relationship between length and numerical properties
 
 const fruits = [];
@@ -21,9 +22,18 @@ console.log(fruits[2]);
 fruits.length = 0;
 console.log(Object.keys(fruits)); 
 console.log(fruits.length);
+*/
 //fruits array using array literal notation
 const fruits = ["Apple", "Banana"];
 console.log(fruits.length);
 // 'fruits2' array created using the Array() constructor.
-const fruits = new Array("Apple", "Banana");
-console.log(fruits2.length);
+const fruits2 = new Array("Apple", "Banana");
+console.log(fruits2.length);    
+
+// 'fruits3' array created using String.prototype.split().
+const fruits3 = "Apple, Banana".split(" ");
+console.log(fruits3.length);
+//split()
+let text = "Hello, how are you?";
+let words = text.split(" "); // Splits the string into an array of words
+console.log(words); // Output: ["Hello,", "how", "are", "you?"]
