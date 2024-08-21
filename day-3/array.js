@@ -76,7 +76,7 @@ const deleteCount = 1;
 const removedItem = fruits.splice(start, deleteCount);
 console.log(fruits);
 console.log(removedItem);
-*/
+
 
 //Remove multiple items by index
 const fruits = ["Apple", "Banana","Strawberry", "Mango", "Cherry"];
@@ -85,3 +85,11 @@ const deleteCount = 3;
 const removedItem = fruits.splice(start, deleteCount);
 console.log(fruits);
 console.log(removedItem);
+*/
+//Merge multiple arrays together
+const fruits = ["apple", "Banana", "Orange"];
+const moreFruits = ["Mango", "Cherry"];
+const combinedFruits = fruits.concat(moreFruits);
+console.log(fruits);
+console.log(moreFruits)
+console.log(combinedFruits);
