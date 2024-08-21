@@ -11,7 +11,7 @@ console.log(Object.keys(fruits)); // ['0', '1', '2', '5']
 console.log(fruits.length); // 6
 
 //increasing array length
-fruits.length = 10;
+fruits.length = 15;
 console.log(fruits);
 console.log(Object.keys(fruits));
 console.log(fruits.length);
