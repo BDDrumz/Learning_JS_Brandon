@@ -1,10 +1,19 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head> 
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <script src="array.js"></script>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <div class="products">
+            <button onclick="addToCart({ name: 'Laptop', price: 999.99 })">Add Laptop ($999.99)</button>
+            <button onclick="addToCart({ name: 'Mouse', price: 19.99 })">Add Mouse ($19.99)</button>
+        </div>
+    </div>
+    <script src="cart.js"></script>
 </body>
 </html>
