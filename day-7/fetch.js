@@ -1,12 +1,8 @@
-const x = document.getElementById("demo");
-function getLocation() {
-    if (navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(showPosition);
-    }else{
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-function showPosition(position) {
-    x.innerHTML = "latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitudes; 
-}
+
+//fetch api
+fetch('https://reqres.in/api/users')
+.then(res => res.json())
+.then(data =>{
+    console.log(data);
+});
+
