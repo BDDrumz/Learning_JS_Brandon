@@ -93,5 +93,3 @@ const combinedFruits = fruits.concat(moreFruits);
 console.log(fruits);
 console.log(moreFruits)
 console.log(combinedFruits);
-*/
-//

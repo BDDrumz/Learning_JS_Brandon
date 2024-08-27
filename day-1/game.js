@@ -16,9 +16,3 @@ if(rand == num){
 else{
     console.log("please try again"); 
 }
-//external js
-<script>
-const PI =3.141592653589793;
-PI =3.14;
-console.log(PI)
-</script>
