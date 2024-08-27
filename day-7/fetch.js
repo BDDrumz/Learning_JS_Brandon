@@ -1,7 +1,12 @@
-getText("fetch_info.txt");
-async function getText(file) {
-    let x = await fetch(file);
-    let y = await x.text();
-    document.getElementById("demo").innerHTML = y;
-    
+const x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(showPosition);
+    }else{
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitudes; 
 }
