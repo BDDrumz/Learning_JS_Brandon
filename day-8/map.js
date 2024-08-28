@@ -28,3 +28,10 @@ recipeMap.forEach( (value, key, map) => {
     alert(`${key}: ${value}`);
 
 });
+// create a map from a plain obj
+let obj ={
+    name: "John",
+    age: 30
+};
+let map = new Map(Object.entries(obj));
+alert (map.get('name'));
