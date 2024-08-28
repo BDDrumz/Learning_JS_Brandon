@@ -19,19 +19,26 @@
 // visitsCountObj.set(ben, 123);
 // alert(visitsCountObj["[object, Object]"]);
 //Iterate over a map
-let recipeMap = new Map([
-    ['cucumber', 500],
-    ['tomatoes', 350],
-    ['onion', 50],
-]);
-recipeMap.forEach( (value, key, map) => {
-    alert(`${key}: ${value}`);
+// let recipeMap = new Map([
+//     ['cucumber', 500],
+//     ['tomatoes', 350],
+//     ['onion', 50],
+// ]);
+// recipeMap.forEach( (value, key, map) => {
+//     alert(`${key}: ${value}`);
 
-});
-// create a map from a plain obj
-let obj ={
-    name: "John",
-    age: 30
-};
-let map = new Map(Object.entries(obj));
-alert (map.get('name'));
+// });
+// // create a map from a plain obj
+// let obj ={
+//     name: "John",
+//     age: 30
+// };
+// let map = new Map(Object.entries(obj));
+// alert (map.get('name'));
+//Object.fromEnties
+// let prices = Object.fromEntries([
+//     ['Banana', 1],
+//     ['Orange', 2],
+//     ['meat', 4]
+// ]);
+// alert(prices.Orange);
