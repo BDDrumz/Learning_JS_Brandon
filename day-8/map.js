@@ -24,12 +24,7 @@ let recipeMap = new Map([
     ['tomatoes', 350],
     ['onion', 50],
 ]);
-for (let vegetable of recipeMap.keys()){
-    alert(vegetable); 
-}
-for ( let amount of recipeMap.values()) {
-    alert(amount);
-}
-for ( let entry of recipeMap) {
-    alert(entry);
-}
+recipeMap.forEach( (value, key, map) => {
+    alert(`${key}: ${value}`);
+
+});
