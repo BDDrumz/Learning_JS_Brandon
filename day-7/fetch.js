@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 blogElement.classList.add('blog');
 
                 blogElement.innerHTML = `<h2>${element.title}</h2> <p>${element.description}</p>
-                <img src="${element.displayImage}">`
+                <img src=${element.displayImage}>`
 
                 
                 blogContainer.appendChild(blogElement)
