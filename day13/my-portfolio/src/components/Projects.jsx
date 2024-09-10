@@ -23,12 +23,39 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="gallery">
-                    <div><img src="./images/mg2.png"/></div>
-                    <div><img src="./images/img3.png"/></div>
-                    <div><img src="./images/img4.png"/></div> 
-                    {/* <div><img src="./images/img5.png"/></div>
-                    <div><img src="./images/img6.png"/></div> */}
-                
+                    <div>
+                        <img src="./images/p1.png"/>
+                    <p></p>
+                    </div>
+                    <div>
+                        <img src="./images/git.png"/>
+                    <p></p>
+                    </div>
+                    <div>
+                        <img src="./images/task.png"/>
+                    </div> 
+                    <div>
+                        <img src="./images/add.png"/>
+                        <p></p>
+                    </div>
+                    <div>
+                        <img src="./images/des.png"/>
+                        <p></p>
+                    </div>
+                    <div className="btn">
+                      <img src="./images/mer.png"/>
+                    </div>  
+                                  
+                </div>
+            </div>
+            <div className="Footer">
+                <p>Designed by @brandoneazzi</p>
+                <p>All Rights Reserved</p>
+                <div className="footer-img">
+                    <div className="footer-img"><img src="./images/fb.png"/></div> 
+                    <div className="footer-img"><img src="./images/ig.png"/></div>
+                    <div className="footer-img"><img src="./images/you.png"/></div>
+
                 </div>
             </div>
         </div>

@@ -19,8 +19,8 @@ const Home = () => {
                 <h1>I'M SUIPE BRANDON VERNYUY</h1>
                 <h3 className="job">Frontend Developer</h3>
             </div>
-            <div>
-                <img src=""/>
+            <div className="home-img">
+              
             </div>
            </div>
            <div className="Footer">
