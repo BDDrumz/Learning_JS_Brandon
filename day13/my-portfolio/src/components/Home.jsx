@@ -27,9 +27,9 @@ const Home = () => {
                 <p>Designed by @brandoneazzi</p>
                 <p>All Rights Reserved</p>
                 <div className="footer-img">
-                    <div className="footer-img"><img src="./images/fb.png"/></div> 
-                    <div className="footer-img"><img src="./images/ig.png"/></div>
-                    <div className="footer-img"><img src="./images/you.png"/></div>
+                    <div className="footer-img"><img src="/images/fb.png"/></div> 
+                    <div className="footer-img"><img src="/images/ig.png"/></div>
+                    <div className="footer-img"><img src="/images/you.png"/></div>
 
                 </div>
             </div>
