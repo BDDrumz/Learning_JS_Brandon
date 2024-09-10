@@ -19,9 +19,6 @@ const Home = () => {
                 <h1>I'M SUIPE BRANDON VERNYUY</h1>
                 <h3 className="job">Frontend Developer</h3>
             </div>
-            <div className="home-img">
-              
-            </div>
            </div>
            <div className="Footer">
                 <p>Designed by @brandoneazzi</p>
@@ -30,7 +27,6 @@ const Home = () => {
                     <div className="footer-img"><img src="/images/fb.png"/></div> 
                     <div className="footer-img"><img src="/images/ig.png"/></div>
                     <div className="footer-img"><img src="/images/you.png"/></div>
-
                 </div>
             </div>
         </div>
