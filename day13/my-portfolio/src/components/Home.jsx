@@ -24,17 +24,14 @@ const Home = () => {
             </div>
            </div>
            <div className="Footer">
+                <p>Designed by @brandoneazzi</p>
                 <p>All Rights Reserved</p>
                 <div className="footer-img">
-                    <img src="./images/fb1.jpeg"/>
-                    <div className="footer-img"><img src="./images/ig.jpeg"/></div>
-                    <div className="footer-img"><img src="./images/yout.jpeg"/></div>
+                    <div className="footer-img"><img src="./images/fb.png"/></div> 
+                    <div className="footer-img"><img src="./images/ig.png"/></div>
+                    <div className="footer-img"><img src="./images/you.png"/></div>
 
                 </div>
-
-                {/* nothing */}
-
-                
             </div>
         </div>
         
