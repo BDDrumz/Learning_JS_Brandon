@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+@media (min-width: 320px) and (max-width: 1025px) {
+  
+}
 body{
 position: relative;
 width: 100%;
