@@ -74,13 +74,23 @@ h1 {
 }
 
 .completed {
-  color: red;
+  color: rgb(188, 52, 52);
   text-decoration: line-through;
   cursor: pointer;
 }
 
 
-.edit,
+.edit{
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.edit:hover{
+  color: rgb(135, 255, 135);
+}
+ 
+.trash:hover{
+  color: red;
+}
 .trash{
   cursor: pointer;
 }

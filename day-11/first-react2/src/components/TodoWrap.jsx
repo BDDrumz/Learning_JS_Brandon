@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import TodoForm from './TodoForm'
 import { v4 as uuidv4 } from 'uuid'
 import Todo from './Todo';
+import TodoEdit from './TodoEdit';
 uuidv4();
 
 const TodoWrap = () => {
@@ -12,19 +13,25 @@ const TodoWrap = () => {
     console.log(todos);
   }
 
-  const toggleComplete = id => {
+  const toggleComplete = (id) => {
     setTodos(todos.map(todo => todo.id === id ? {
-      todo, completed: !todo.completed} : todo ))
+      ...todo, completed: !todo.completed} : todo ))
   } 
 
-  const deleteTodo = id => {
+  const deleteTodo = (id) => {
     setTodos(todos.filter(todo => todo.id !== id))
   }
 
-  const editTodo = id => {
+  const editTodo = (id) => {
     setTodos(todos.map(todo => todo.id === id ? {
-      todo, isEditing: !todo.isEditing} : todo ))
+      ...todo, isEditing: !todo.isEditing} : todo ))
   }
+
+  const editTask = (task, id) => {
+    setTodos(todos.map(todo => todo.id === id ? {
+      ...todo, task, isEditing: !todo.isEditing} : todo))
+  }
+
   return (
     <div className='todo-wrap'>
       <h1>Get things done!</h1>
@@ -32,9 +39,14 @@ const TodoWrap = () => {
       <TodoForm addTodo={addTodo}/>
     
       {todos.map((todo, index) => (
-        <Todo task={todo} key={index} 
+        todo.isEditing ? (
+          <TodoEdit editTodo={editTask} task={todo}/>
+        ) : (
+          <Todo task={todo} key={index} 
         toggleComplete={toggleComplete} deleteTodo= 
         {deleteTodo} editTodo={editTodo}/>
+        )
+
       ))}
     </div>
   )
