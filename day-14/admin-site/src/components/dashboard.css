@@ -1,0 +1,100 @@
+.dashboard-main h1{
+    color:  #212631 !important;
+}
+.home{
+    font-size: bold;
+    color: rgb(63, 129, 227);
+}
+.dashboard-main{
+    padding: 4rem 10rem;
+}
+
+.sale-main {
+    display: flex;
+}
+
+.sale-left {
+    display: block;
+    gap: 1rem;
+    margin-left: 1rem;
+    padding-top: 2rem;
+}
+
+.s-left1 {
+    width: 490px;
+    height: 24rem;
+    background: white;
+    border-radius: 10px;
+}
+
+.s-left2 {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+
+}
+
+.s-left3,
+.s-left4 {
+    width: 237px;
+    height: 15rem;
+    background: white;
+    border-radius: 10px;
+}
+
+.sale-right {
+    flex: 1;
+    height: 40rem;
+    margin: 2rem 1rem;
+    background: white;
+    border-radius: 10px;
+}
+
+.main {
+    display: block;
+}
+
+.users-main {
+    display: flex;
+    gap: 1rem;
+}
+
+.users-left {
+    height: 40rem;
+    flex: 1;
+    
+
+}
+
+.users {
+    width: 99%;
+    height: 37.5rem;
+    margin: 1rem;
+    background: white;
+    border-radius: 5px;
+}
+
+.users-right {
+    display: block;
+    width: 30%;
+    height: 40rem;
+    
+
+}
+
+.users-num,
+.conversation,
+.sessions {
+    width: 90%;
+    height: 190px;
+    background: white;
+    margin: 1rem;
+    border-radius: 5px;
+}
+.traffic-main{
+    width: 97%;
+    height: 40rem;
+    border-radius: 5px;
+    background: white;
+    margin: 1rem;
+}

@@ -3,6 +3,7 @@ import React from 'react'
 const Colors = () => {
   return (
     <div>
+      colors here
     </div>
   )
 }

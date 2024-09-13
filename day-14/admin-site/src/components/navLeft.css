@@ -1,0 +1,125 @@
+.BD{
+    padding: 1rem;
+    color: white;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    position: sticky;
+}
+.dash{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    position: relative;
+}
+.dash:hover{
+    background: gray;
+    border-radius: 5px;
+}
+
+.theme {
+    display: flex;
+    padding: 2rem 1rem;
+
+}
+
+.theme P {
+    color: gray;
+    font-weight: bold;
+    font-size: 13px;
+
+}
+
+.color {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 1rem;
+
+}
+
+.Theme:hover {
+    background: gray;
+    border-radius: 5px;
+}
+
+.topo {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 1rem;
+
+}
+
+.icons {
+    width: 20px;
+    color: gray;
+}
+
+.base{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    gap: 1rem ;
+    width: 100%;
+    padding: 1rem 1rem;
+    background: none;
+    border: none;
+}
+.base:hover{
+   background: gray;
+   border-radius: 5px;
+   width: 100%;
+}
+.drop-icon{
+    margin-left: 6rem;
+    cursor: pointer;
+}
+.drop-main{
+    position: relative;
+}
+.drop-items{
+    position: absolute;
+    padding: 1rem;
+}
+.drop-items:hover{
+    background: gray;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+.circle{
+    
+    width: 6px;
+}
+/* .button{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    gap: 1rem ;
+    width: 100%;
+    padding: 1rem 1rem;
+    background: none;
+    border: none;
+}
+.send{
+    width: 50px;
+} */

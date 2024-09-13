@@ -1,17 +1,15 @@
 import React from 'react'
-import Navbar from './Navbarleft'
 import Colors from './Colors'
 import Topography from './Topography'
 import About from './About'
 import { Link } from 'react-router-dom'
+import Navbarleft from './Navbarleft'
 
 const Home = () => {
   return (
     <div>
         <div className="main">
-           <Navbar/>
-           <Colors/>
-          <Topography/>
+          Home page 
         </div>
     </div>
   )
