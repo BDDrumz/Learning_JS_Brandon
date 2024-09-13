@@ -14,8 +14,8 @@ const About = () => {
             <div className="About">
                 <div className="About-text">
                     <h2>ABOUT ME</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Vel ut quis viverra ornare pharetra vitae.  <br />
-                        Lorem ipsum dolor sit amet consectetur. Vel ut quis viverra ornare pharetra vitae.  <br />
+                    <p>I'm a Frontend Devloper deliverying professional work <br />
+                       Problem solving skills, Leadership and Mentorship <br />in Software Developing skils <br />
                         </p>
                 </div>
                 <div className="left-about">

@@ -3,7 +3,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import { Link } from "react-router-dom";
-
+import '../App.css'
 
 const Home = () => {
     return(
@@ -16,7 +16,7 @@ const Home = () => {
                 <Link to={"/About"}>ABOUT</Link>
             </nav>
             <div className="text">
-                <h1>I'M SUIPE BRANDON VERNYUY</h1>
+                <h1> Hi there <br /> I'M SUIPE BRANDON VERNYUY</h1>
                 <h3 className="job">Frontend Developer</h3>
             </div>
            </div>

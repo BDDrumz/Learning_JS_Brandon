@@ -28,7 +28,7 @@ const Projects = () => {
                     <p></p>
                     </div>
                     <div>
-                        <img src="./images/git.png"/>
+                        <img src="./images/git1.png"/>
                     <p></p>
                     </div>
                     <div>
