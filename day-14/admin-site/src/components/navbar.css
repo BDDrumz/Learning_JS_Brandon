@@ -1,9 +1,10 @@
 
 .Navbartop{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:auto;
+    width: 85%;
     height: 4rem;
     background: white;
 }

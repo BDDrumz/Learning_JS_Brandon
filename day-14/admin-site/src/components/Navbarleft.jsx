@@ -6,7 +6,7 @@ import { Gauge, Droplet, Pencil, Puzzle, ChevronDown,ChevronUp,
   Circle, Send
  } from 'lucide-react'
 import Accodion from './Accodion';
-
+import '../App.css'
 
 const Navbarleft = () => {
     const [Open, setOpen]=useState(false)

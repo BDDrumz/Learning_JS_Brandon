@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './dashboard.css'
+import '../App.css'
 
 function Index() {
   return (
@@ -12,41 +13,43 @@ function Index() {
       <div className='sale-main'>
         <div className='sale-left'>
           <div className='s-left1'>
-            <h1>Sale</h1>
+            Sale
           </div>
 
           <div className='s-left2'>
 
             <div className='s-left3'>
-              <h3>Customers</h3>
+              Customers
             </div>
             <div className='s-left4'>
-              <h3>Orders</h3>
+              Orders
             </div>
 
           </div>
 
         </div>
         <div className='sale-right'>
-          <h1>Traffic</h1>
+          Traffic
         </div>
       </div>
 
       <div className='users-main'>
 
         <div className='users-left'>
-          <div className="users"></div>
+          <div className="users">
+            Users
+          </div>
         </div>
 
         <div className="users-right">
-          <div className='users-num'></div>
-          <div className='conversation'></div>
-          <div className="sessions"></div>
+          <div className='users-num'>number of users</div>
+          <div className='conversation'>Conversations</div>
+          <div className="sessions">Sessions</div>
         </div>
       </div>
       <div className='traffic-main'>
         <div className='traffic'>
-          
+          traffic
         </div>
       </div>
 

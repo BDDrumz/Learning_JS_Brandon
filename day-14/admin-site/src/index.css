@@ -20,46 +20,5 @@
 .routes {
     display: block;
 }
-
-@media (max-width:900px) {
-    .menu {
-        display: flex;
-    }
-
-    .navleft {
-        display: none;
-    }
-
-    .section {
-        display: block;
-    }
-
-    .sale-main {
-        display: block;
-    }
-
-    .s-left2 {
-        min-width: 180%;
-    }
-
-    .s-left3,
-    .s-left4 {
-        width: 100%;
-
-    }
-
-    .s-left1 {
-        width: 50rem;
-    }
-
-    .sale-right {
-        width: 50rem;
-
-    }
-}
-
-@media (max-width:500px) {
-    .searchbar {
-        display: none;
-    }
-} */
+        */
+ /*   */

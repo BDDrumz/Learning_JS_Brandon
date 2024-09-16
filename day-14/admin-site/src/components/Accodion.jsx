@@ -1,5 +1,6 @@
 import React from 'react'
 import './Accodion.css'
+import '../App.css'
 
 const Accodion = () => {
   return (

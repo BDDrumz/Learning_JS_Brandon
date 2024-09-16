@@ -4,6 +4,7 @@ import { Search, Menu, Sun, MailOpen,
   Logs, Bell, Grip
  } from 'lucide-react'
 import './navbar.css'
+import '../App.css'
 
 
 const Navbartop = () => {
