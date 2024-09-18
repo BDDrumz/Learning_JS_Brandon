@@ -121,19 +121,18 @@ function Index() {
                 <div className='usageDiv'><h3>Usage</h3></div>
                 <div className='activityDiv'><h3>Activity</h3></div>
               </div>
-              <div className='profile-info'>
+              {Data.map((profile, index)=>
+              <div className='profile-info' key={index}>
                <div><img src="#" /></div>
-               <div className='usersDiv'>Branzy</div>
-               <div className='countryDiv'>Cameroon</div>
-               <div className='usageDiv'>50%</div>
-               <div className='activityDiv'>10sec</div>
+               <div className='usersDiv'>{profile.name}</div>
+               <div className='countryDiv'>{profile.country}</div>
+               <div className='usageDiv'>{profile.type}</div>
+               <div className='activityDiv'>{profile.activity}</div>
                 
-                {/* {Data.map(user=>(
-                  <div>
-                  <div className="profile_pic"> <img src="#"/> </div>
-                  <div className="users_name"></div>
-                  </div>                ))} */}
+
               </div>
+
+              )}
             </div>
         </div>
 

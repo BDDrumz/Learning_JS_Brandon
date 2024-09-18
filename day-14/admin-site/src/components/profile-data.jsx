@@ -1,8 +1,8 @@
 import React from "react"
-import
+// import img1 from '../components/images/img1.jpg'
 const Data =[
     {
-        // 'pic': '',
+        'pic': 'img1.jpg',
         'name': 'Mac',
         'type':'new',
         'registered':'Jan 1, 2023',
