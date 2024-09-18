@@ -115,19 +115,21 @@ function Index() {
           </div>
           <div className='users-main-profile'>
               <div className='profile-head'>
-                <div className='userDiv'><Users /></div>
-                <div className='usersDiv'><h3>User</h3></div>
-                <div className='countryDiv'><h3>Country</h3></div>
-                <div className='usageDiv'><h3>Usage</h3></div>
-                <div className='activityDiv'><h3>Activity</h3></div>
+                <div style={{width: "1px"}}><Users /></div>
+                <div style={{width: "130px", marginLeft: "-50px"}}><h3>User</h3></div>
+                <div style={{width: "0px"}}><h3>Country</h3></div>
+                <div style={{width: "100px"}}><h3>Usage</h3></div>
+                <div ><h3>Activity</h3></div>
               </div>
               {Data.map((profile, index)=>
-              <div className='profile-info' key={index}>
-               <div><img src="#" /></div>
-               <div className='usersDiv'>{profile.name}</div>
-               <div className='countryDiv'>{profile.country}</div>
-               <div className='usageDiv'>{profile.type}</div>
-               <div className='activityDiv'>{profile.activity}</div>
+              <div className='profile-info' key={index} style={{marginTop:"1rem"}}>
+               <div style={{width: "5px"}}><img src={profile.pic} style={{width:"50px", borderRadius:"50%", objectFit:"cover"}} /></div>
+               <div style={{width: "200px", marginLeft: "-53px"}}><b>{profile.name}</b>
+                <div >{profile.type} <span>{profile.registered}</span></div>
+               </div>
+               <div style={{width: "100px", marginLeft: "-68px"}}>{profile.country}</div>
+               <div style={{width: "100px",marginLeft: "-100px"}}>{profile.type}</div>
+               <div >{profile.activity}</div>
                 
 
               </div>
