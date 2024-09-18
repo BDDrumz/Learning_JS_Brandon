@@ -22,7 +22,7 @@
 
 .s-left1 {
     width: 490px;
-    height: 24rem;
+    height: 19rem;
     background: white;
     border-radius: 10px;
 }
@@ -36,18 +36,44 @@
 
 .s-left3,
 .s-left4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     width: 237px;
-    height: 15rem;
+    height: 10rem;
     background: white;
     border-radius: 10px;
+    
 }
-
+.left-icons-main{
+    display: flex;
+    gap: 7rem;
+    padding: 1rem;
+}
+.left-text,
+.left-text1,
+.left-text2{
+    padding: .1rem 2rem ;
+}
+.left-text1{
+    color: red;
+}
+.left-text2{
+    color: green;
+}
+.arrows{
+    width: 20px;
+}
 .sale-right {
     flex: 1;
-    height: 40rem;
+    height: 30rem;
     margin: 2rem 1rem;
     background: white;
     border-radius: 10px;
+}
+.bar-graph{
+    padding: 2rem 2rem;
+    
 }
 
 .main {
@@ -60,23 +86,77 @@
 }
 
 .users-left {
-    height: 40rem;
+    border-radius: 10px;
+    margin: 1rem;
+    height: 37.5rem;
+    background-color: white;
     flex: 1;
     
 
 }
-
-.users {
-    width: 99%;
-    height: 37.5rem;
-    margin: 1rem;
-    background: white;
+.left-icons{
+    width: 40px;
     border-radius: 5px;
+    color: rgb(37, 69, 247);
+    background: skyblue;
+  
 }
+
+.users {    
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+    
+}
+.btn_add{
+    width: auto;
+    height: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border: none;
+    padding: 1rem;
+    font-size: larger;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: #656667;
+}
+.add_btn{
+    width: 20px;
+}
+.profile-head{
+    display: flex;
+    gap: 8rem;
+    margin-left: 4rem;
+}
+.profile-info{
+    display: flex;
+    gap: 8rem;
+    margin-left: 4rem;
+}
+.userDiv{
+
+}
+.usersDiv{
+    margin-left: -4rem;
+}
+.countryDiv{
+    margin-left: 4rem;
+}
+.usageDiv{
+    margin-left: -6rem;
+}
+.activityDiv {
+    margin-left: 4rem;
+}
+
 
 .users-right {
     display: block;
-    width: 30%;
+    width: 20%;
     height: 40rem;
     
 
