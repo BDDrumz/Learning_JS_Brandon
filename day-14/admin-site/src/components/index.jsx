@@ -7,7 +7,7 @@ import { Chart, registerables } from "chart.js"
 import { Line, Bar, } from "react-chartjs-2"
 import {
   UsersRound, ShoppingCart, MoveDown, MoveUp,
-  UserRoundPlus, Users} from "lucide-react"
+  UserRoundPlus, Users, EllipsisVertical} from "lucide-react"
 import Data from './profile-data'
 Chart.register(CategoryScale, ...registerables);
 function Index() {
@@ -116,20 +116,23 @@ function Index() {
           <div className='users-main-profile'>
               <div className='profile-head'>
                 <div style={{width: "1px"}}><Users /></div>
-                <div style={{width: "130px", marginLeft: "-50px"}}><h3>User</h3></div>
+                <div style={{width: "160px", marginLeft: "-50px"}}><h3>User</h3></div>
                 <div style={{width: "0px"}}><h3>Country</h3></div>
                 <div style={{width: "100px"}}><h3>Usage</h3></div>
                 <div ><h3>Activity</h3></div>
               </div>
               {Data.map((profile, index)=>
               <div className='profile-info' key={index} style={{marginTop:"1rem"}}>
-               <div style={{width: "5px"}}><img src={profile.pic} style={{width:"50px", borderRadius:"50%", objectFit:"cover"}} /></div>
-               <div style={{width: "200px", marginLeft: "-53px"}}><b>{profile.name}</b>
+               <div style={{width: "5px", }}><img src={profile.pic} style={{width:"50px", borderRadius:"50%", objectFit:"cover"}} /></div>
+               <div style={{width: "230px", marginLeft: "-53px"}}><b>{profile.name}</b>
                 <div >{profile.type} <span>{profile.registered}</span></div>
                </div>
                <div style={{width: "100px", marginLeft: "-68px"}}>{profile.country}</div>
                <div style={{width: "100px",marginLeft: "-100px"}}>{profile.type}</div>
-               <div >{profile.activity}</div>
+               <div >
+                <p>{profile.last}</p>
+                <h3>{profile.activity}</h3>
+                </div>
                 
 
               </div>
@@ -139,7 +142,12 @@ function Index() {
         </div>
 
         <div className="users-right">
-          <div className='users-num'>number of users</div>
+          <div className='users-num'>
+          <div className='users-num-info'><p>h3(-12.4% <MoveDown className='arrows'/>)</p>
+          <EllipsisVertical />
+          </div>
+          <span>Users</span>
+          </div>
           <div className='conversation'>Conversations</div>
           <div className="sessions">Sessions</div>
         </div>

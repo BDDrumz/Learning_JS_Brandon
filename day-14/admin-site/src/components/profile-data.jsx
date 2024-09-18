@@ -4,15 +4,18 @@ import pic1 from '../components/images/img2.jpeg'
 import pic2 from '../components/images/img3.jpeg'
 import pic3 from '../components/images/img4.jpeg'
 import pic4 from '../components/images/img5.jpeg'
-import flag1 from '../components/images/usa.jpeg'
+// import flag1 from '../components/images/usa.jpeg'
+// import flag2 from '../components/images/france.png'
+
 const Data =[
     {
         'pic': pic,
         'name': 'Mac',
         'type':'new',
         'registered':'|Registered:Jan 1, 2023',
-        'country':flag1,
+        // 'country':flag1,
         'usage': '50%',
+        'last': 'last login',
         'activity': '10sec ago'
     },
     {
@@ -20,8 +23,9 @@ const Data =[
         'name': 'Avram Tarasios',
         'type':'Recurring ',
         'registered':'|Registered:Jan 1, 2023',
-        'country':'cam',
+        // 'country':flag2,
         'usage': '50%',
+        'last': 'last login',
         'activity': '10sec ago'
     },
     {
@@ -31,6 +35,7 @@ const Data =[
         'registered':'|Registered:Jan 1, 2023',
         'country':'cam',
         'usage': '50%',
+        'last': 'last login',
         'activity': '10sec ago'
     },
     {
@@ -40,6 +45,7 @@ const Data =[
         'registered':'|Registered:Jan 1, 2023',
         'country':'cam',
         'usage': '50%',
+        'last': 'last login',
         'activity': '10sec ago'
     },
     {
@@ -49,6 +55,7 @@ const Data =[
         'registered':'|Registered:Jan 1, 2023',
         'country':'cam',
         'usage': '50%',
+        'last': 'last login',
         'activity': '10sec ago'
     }
 

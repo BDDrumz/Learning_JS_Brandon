@@ -109,6 +109,7 @@
     margin: 1rem;
     border-radius: 5px;
     
+    
 }
 .btn_add{
     width: auto;
@@ -131,11 +132,14 @@
     display: flex;
     gap: 8rem;
     margin-left: 4rem;
+    width: 90%;
+    border-bottom: 1px solid rgb(184, 181, 181);
 }
 .profile-info{
     display: flex;
     gap: 8rem;
     margin-left: 4rem;
+    border-bottom: 1px solid rgb(184, 181, 181);
 }
 
 
@@ -147,14 +151,28 @@
 
 }
 
+.users-num{
+    background: rgb(68, 139, 255) ;
+}
+.conversation{
+    background: rgb(225, 198, 47);
+}
+.sessions{
+    background: rgb(214, 44, 101);
+}
 .users-num,
 .conversation,
 .sessions {
     width: 90%;
     height: 190px;
-    background: white;
     margin: 1rem;
     border-radius: 5px;
+}
+.users-num-info{
+    display: flex;
+    gap: 3rem;
+    padding: 1rem;
+    color: white;
 }
 .traffic-main{
     width: 97%;
