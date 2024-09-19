@@ -1,19 +1,60 @@
-import React from 'react'
+import React from "react";
 import { useState } from "react";
-import "./navLeft.css"
-import { Link } from 'react-router-dom'
-import { Gauge, Droplet, Pencil, Puzzle, ChevronDown,ChevronUp,
-  Circle, Send
- } from 'lucide-react'
-import Accodion from './Accodion';
-import '../App.css'
+import "./navLeft.css";
+import { Link } from "react-router-dom";
+import { Gauge } from "lucide-react";
+import "../App.css";
+import { sidebarItems } from "./sidebar";
 
 const Navbarleft = () => {
-    const [Open, setOpen]=useState(false)
+  const navItems = sidebarItems;
+  // const [Open, setOpen] = useState(false)
   return (
-    <nav>
-      <div className='BD'><h1>@BrandonTech</h1></div>
+    <div className="sidebar">
+      <div className="BD">
+        <h1>@BrandonTech</h1>
+      </div>
       <Link className='dash' to={"/dashboard"}><Gauge className='icons' />Dashboard</Link>
+
+      <div className="sidebar_items">
+        {sidebarItems.map((sideItem, id) => {
+          return (
+            <div key={id}>
+              <h3>{sideItem.text}</h3>
+              <div>
+                <ul>
+                  {sideItem.items.map((item, id) => {
+                    return (
+                      <li key={id}>
+                        <Link to={item.Link}>
+                          <item.icon />
+                          {item.text}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </div>
+          );
+        })}
+
+        {/* {navItems.map((navItem, index) =>
+          <div key={index}>
+            <div className="text"><p >{navItem.text}</p></div>
+            {navItem.items.map((item, idx) =>
+              item.dropdown ? {...
+          <sidebarItems navItems = { item } key = { idx } />
+
+        } : (
+              <sidebarItems sidebarItems={item} key={idx} />
+            )
+        )}
+          </div>
+        )} */}
+      </div>
+
+      {/*      
       <div className='theme'><p>THEME</p></div>
       <div className='Theme'><Link className="color" to={"/Colors"}><Droplet className='icons' />Colors</Link></div>
       <div className='Theme'><Link className="topo" to={"/Topography"}><Pencil className='icons' />Topograhpy</Link></div>
@@ -36,7 +77,7 @@ const Navbarleft = () => {
           )}
       </div>
 
-      {/* <div className='drop-main'  >
+      <div className='drop-main'  >
       
           <button onClick={() => setOpen((prev) => !prev )} className='button'>
           <Send className='send' />Buttons 
@@ -52,9 +93,8 @@ const Navbarleft = () => {
             </div>
           )}
       </div> */}
+    </div>
+  );
+};
 
-    </nav>
-  )
-}
-
-export default Navbarleft
+export default Navbarleft;
