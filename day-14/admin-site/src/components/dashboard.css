@@ -96,9 +96,7 @@
 }
 .left-icons{
     width: 40px;
-    border-radius: 5px;
-    color: rgb(37, 69, 247);
-    background: skyblue;
+    border-radiuspercentskyblue;
   
 }
 
@@ -180,4 +178,13 @@
     border-radius: 5px;
     background: white;
     margin: 1rem;
+}
+.percent{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.countyImg{
+    display: flex;
+    align-items: center;
 }
