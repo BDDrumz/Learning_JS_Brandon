@@ -8,12 +8,12 @@ export const sidebarItems = [
         text: "THEME",
         items: [
             {
-                Theme: "Colors",
+                text: "Colors",
                 icon: Droplet,
                 Link: "/Colors"
             },
             {
-                Theme: "Typography",
+                text: "Typography",
                 icon: Pencil,
                 Link: "Topography"
             }
@@ -23,90 +23,90 @@ export const sidebarItems = [
         text: "COMPONENTS",
         items: [
             {
-                Theme: "Base",
+                text: "Base",
                 icon: Puzzle,
                 Link: "/",
                 dropdown: true,
                 elements: [
                     {
-                        Drop: "Accordion",
+                        text: "Accordion",
                         icon: Circle,
                         Link: "/Accordion"
                     },
                     {
-                        Drop: "Breadcrumb",
+                        text: "Breadcrumb",
                         icon: Circle,
                         Link: "/"
                     }
                 ]
             },
             {
-                Theme: "Buttons",
+                text: "Buttons",
                 icon: Send,
                 Link: "/",
                 dropdown: true,
                 elements: [
                     {
-                        Drop: "Buttons",
+                        text: "Buttons",
                         icon: Circle,
                         Link: "/"
                     },
                     {
-                        Drop: "Buttons Gropus",
+                        text: "Buttons Gropus",
                         icon: Circle,
                         Link: "/"
                     }
                 ]
             },
             {
-               Theme: "Forms",
+                text: "Forms",
                 icon: BookText ,
                 Link: "/",
                 dropdown: true,
                 elements: [
                     {
-                        Drop: "Form Contol",
+                        text: "Form Contol",
                         icon: Circle,
                         Link: "/"
                     },
                     {
-                        Drop: "Select",
+                        text: "Select",
                         icon: Circle,
                         Link: "/"
                     }
                 ]
             },
             {
-                Theme: "Icons",
+                text: "Icons",
                 icon: Star ,
                 Link: "/",
                 dropdown: true,
                 elements: [
                     {
-                        Drop: "CoreUI Free",
+                        text: "CoreUI Free",
                         icon: Circle,
                         Link: "/"
                     },
                     {
-                        Drop: "CoreUI Flags",
+                        text: "CoreUI Flags",
                         icon: Circle,
                         Link: "/"
                     }
                 ]
             },
             {
-                Theme: "Notifications",
+                text: "Notifications",
                 icon: Bell,
                 Link: "/",
                 dropdown: true,
                 elements: [
                     {
-                        Drop: "Alerts",
+                        text: "Alerts",
                         icon: Circle,
                         Link: "/"
                     },
                     {
-                        Drop: "Badges",
+                        text: "Badges",
                         icon: Circle,
                         Link: "/"
                     }
@@ -118,12 +118,12 @@ export const sidebarItems = [
         text: "PLUGINS",
         items: [
             {
-                Theme:"Calender",
+                text:"Calender",
                 icon:CalendarDays,
                 Link:"/"
             },
             {
-                Theme:"Maps",
+                text:"Maps",
                 icon: Map ,
                 Link:"/"
             }

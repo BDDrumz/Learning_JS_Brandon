@@ -18,15 +18,15 @@ function Index() {
         label: 'Users',
         data: [75, 78, 79, 48, 30, 15, 40, 80, 74, 24, 100,],
         backgroundColor: 'skyblue',
-        borderColor: 'white',
+        borderColor: 'black',
         borderWidth: 0.3,
         tension: 0.1
       },
       {
         label: 'New Users',
         date: [75, 78, 79, 45, 30, 19, 45, 90, 70, 25, 15, 100],
-        backgroundColor: 'rgb(1, 183, 255)',
-        borderColor: 'white',
+        backgroundColor: 'blue',
+        borderColor: 'green',
         borderWidth: 0.3,
         tension: 0.1
       },

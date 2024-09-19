@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./navLeft.css";
 import { Link } from "react-router-dom";
-import { Gauge } from "lucide-react";
+import { Gauge} from "lucide-react";
 import "../App.css";
 import { sidebarItems } from "./sidebar";
 
@@ -14,15 +14,12 @@ const Navbarleft = () => {
       <div className="BD">
         <h1>@BrandonTech</h1>
       </div>
-      <Link className="dash" to={"/dashboard"}>
-        <Gauge className="icons" />
-        Dashboard
-      </Link>
+      <Link className='dash' to={"/dashboard"}><Gauge className='icons' />Dashboard</Link>
 
       <div className="sidebar_items">
         {sidebarItems.map((sideItem, id) => {
           return (
-            <div key={id} className="theme">
+            <div key={id}>
               <h3>{sideItem.text}</h3>
               <div>
                 <ul>
@@ -31,7 +28,7 @@ const Navbarleft = () => {
                       <li key={id}>
                         <Link to={item.Link}>
                           <item.icon />
-                          {item.Theme}
+                          {item.text}
                         </Link>
                       </li>
                     );
