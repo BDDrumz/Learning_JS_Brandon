@@ -173,7 +173,7 @@ function Index() {
               <div
                 className="profile-info"
                 key={index}
-                style={{ marginTop: "1rem" }}
+                style={{ marginTop: ".5rem" }}
               >
                 <div style={{ width: "5px" }}>
                   <img
@@ -191,18 +191,19 @@ function Index() {
                     {profile.type} <span>{profile.registered}</span>
                   </div>
                 </div>
-                <div className="countyImg" style={{ width: "100px", marginLeft: "-68px" }}>
-                  {
-                    <img
-                      src={profile.country}
-                      style={{ width: "30px" }}
-                    />
-                  }
+                <div
+                  className="countyImg"
+                  style={{ width: "100px", marginLeft: "-68px" }}
+                >
+                  {<img src={profile.country} style={{ width: "30px" }} />}
                 </div>
-                <div className="percent" style={{ width: "150px", marginLeft: "-100px" }}>
+                <div
+                  className="percent"
+                  style={{ width: "100px", marginLeft: "-100px" }}
+                >
                   {profile.usage}
-                  <div 
-                  >{profile.registered}</div>
+                  <div className="register">{profile.registered}</div>
+                  <div className="percent_bar"></div>
                 </div>
                 <div>
                   <p>{profile.last}</p>
