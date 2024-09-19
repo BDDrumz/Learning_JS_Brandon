@@ -14,12 +14,15 @@ const Navbarleft = () => {
       <div className="BD">
         <h1>@BrandonTech</h1>
       </div>
-      <Link className='dash' to={"/dashboard"}><Gauge className='icons' />Dashboard</Link>
+      <Link className="dash" to={"/dashboard"}>
+        <Gauge className="icons" />
+        Dashboard
+      </Link>
 
       <div className="sidebar_items">
         {sidebarItems.map((sideItem, id) => {
           return (
-            <div key={id}>
+            <div key={id} className="theme">
               <h3>{sideItem.text}</h3>
               <div>
                 <ul>
@@ -28,7 +31,7 @@ const Navbarleft = () => {
                       <li key={id}>
                         <Link to={item.Link}>
                           <item.icon />
-                          {item.text}
+                          {item.Theme}
                         </Link>
                       </li>
                     );

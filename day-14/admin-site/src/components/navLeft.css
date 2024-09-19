@@ -22,7 +22,8 @@
 
 .theme {
     display: flex;
-    padding: 2rem 1rem;
+    padding: 1rem;
+    color: gray;
 
 }
 
