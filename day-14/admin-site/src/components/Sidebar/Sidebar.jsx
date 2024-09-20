@@ -1,5 +1,4 @@
-import IMAGES from "../../images/image";
-import sidebarItems from "./Sidebar/sideitems";
+import sidebarItems from "./sideitems";
 import "./Sidebar.css";
 import { SidebarItem, SidebarDropdownItem } from "./sidebarItems";
 import { Gauge} from "lucide-react";
@@ -8,13 +7,10 @@ import { Gauge} from "lucide-react";
 const Sidebar = () => {
   const navItems = sidebarItems
 
-  return (
-    <div className="sidebar">
-      <div className="nav">
-        <div className="nav-links">
-          <div className="logo">
-            <img src={IMAGES.logo1} alt="logo image" />
-          </div>
+  return ( 
+    <div className="w-full mt-4">
+      <div className="flex flex-col gap-2">
+        <div className="w-full">
           <SidebarItem
             sidebarItem={{
               text: "Dashboard",
@@ -26,7 +22,7 @@ const Sidebar = () => {
 
           {navItems.map((navItem, index) => (
             <div key={index}>
-              <div className="text">{navItem.text}</div>
+              <div className="my-2 text-slate-400">{navItem.text}</div>
               {navItem.items.map((item, idx) =>
                 item.dropdown ? (
                   <SidebarDropdownItem sidebarItem={item} key={idx} />

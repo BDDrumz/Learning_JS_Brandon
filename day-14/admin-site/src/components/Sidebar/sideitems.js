@@ -24,7 +24,7 @@ const sidebarItems = [
           link: "/color"
         },
         {
-          text: "Topography",
+          text: "Typography",
           icon: Pencil,
           link: "/Topography"
         }
@@ -41,11 +41,11 @@ const sidebarItems = [
           elements: [
             {
               text: "Accordion",
-              link: "/base/accordion"
+              link: "/accordion"
             },
             {
               text: "Breadcrumb",
-              link: "/base/breadcrumbs"
+              link: "breadcrumbs"
             }
           ]
         },
@@ -56,12 +56,12 @@ const sidebarItems = [
           dropdown: true,
           elements: [
             {
-              text: "Color",
-              link: "/color"
+              text: "Buttons",
+              link: "/"
             },
             {
-              text: "Topography",
-              link: "/Topography"
+              text: "Buttons groups",
+              link: "/"
             }
           ]
         },
@@ -72,12 +72,12 @@ const sidebarItems = [
           dropdown: true,
           elements: [
             {
-              text: "Color",
-              link: "/color"
+              text: "Form Control",
+              link: "/"
             },
             {
-              text: "Topography",
-              link: "/Topography"
+              text: "Select",
+              link: "/"
             }
           ]
         },
@@ -88,12 +88,12 @@ const sidebarItems = [
           dropdown: true,
           elements: [
             {
-              text: "Color",
-              link: "/color"
+              text: "CoreUI Free",
+              link: "/"
             },
             {
-              text: "Topography",
-              link: "/Topography"
+              text: "CoreUI Flags",
+              link: "/"
             }
           ]
         },
@@ -104,27 +104,16 @@ const sidebarItems = [
           dropdown: true,
           elements: [
             {
-              text: "Color",
-              link: "/color"
+              text: "Alerts",
+              link: "/"
             },
             {
-              text: "Topography",
-              link: "/Topography"
+              text: "Badges",
+              link: "/"
             }
           ]
         },
-        {
-          text: "Widgets",
-          icon: ClipboardList,
-          link: "/",
-          badge: "NEW"
-        },
-        {
-          text: "Smart Table",
-          icon: Grid3X3,
-          link: "/",
-          badge: "PRO"
-        }
+        
       ]
     },
     {
@@ -144,7 +133,7 @@ const sidebarItems = [
         {
           text: "Google Maps",
           icon: MapIcon,
-          link: "/",
+          link: "/google",
           badge: "PRO"
         }
       ]
@@ -159,12 +148,12 @@ const sidebarItems = [
           dropdown: true,
           elements: [
             {
-              text: "Color",
+              text: "Login",
               link: "/color"
             },
             {
-              text: "Topography",
-              link: "/Topography"
+              text: "Register",
+              link: "/"
             }
           ]
         },
@@ -175,12 +164,12 @@ const sidebarItems = [
           dropdown: true,
           elements: [
             {
-              text: "Color",
-              link: "/color"
+              text: "Invoicing",
+              link: "/"
             },
             {
-              text: "Topography",
-              link: "/Topography"
+              text: "Email",
+              link: "/"
             }
           ]
         }
