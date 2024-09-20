@@ -203,7 +203,6 @@ function Index() {
                 >
                   {profile.usage}
                   <div className="register">{profile.registered}</div>
-                  <div className="percent_bar"></div>
                 </div>
                 <div>
                   <p>{profile.last}</p>
