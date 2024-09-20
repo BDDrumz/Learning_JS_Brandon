@@ -1,12 +1,16 @@
 .dashboard-main h1{
+    padding: 1rem;
+    font-size: 30px;
+    font-weight: bold;
     color:  #212631 !important;
 }
 .home{
+    margin-left: 1rem;
     font-size: bold;
     color: rgb(63, 129, 227);
 }
 .dashboard-main{
-    padding: 4rem 10rem;
+    padding: 4rem 6rem;
 }
 
 .sale-main {
@@ -38,7 +42,7 @@
 .s-left4 {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
     width: 237px;
     height: 10rem;
     background: white;
@@ -62,7 +66,7 @@
     color: green;
 }
 .arrows{
-    width: 20px;
+    width: 0px;
 }
 .sale-right {
     flex: 1;

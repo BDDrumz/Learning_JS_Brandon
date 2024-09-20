@@ -20,7 +20,7 @@ const Navbarleft = () => {
         {sidebarItems.map((sideItem, id) => {
           return (
             <div key={id}>
-              <h3>{sideItem.text}</h3>
+              <h3 className="">{sideItem.text}</h3>
               <div>
                 <ul>
                   {sideItem.items.map((item, id) => {

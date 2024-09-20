@@ -115,7 +115,7 @@ function Index() {
             </div>
             <div className="s-left4">
               <div className="left-icons-main">
-                {" "}
+              
                 <p>Orders </p>
                 <ShoppingCart className="left-icons" />
               </div>
