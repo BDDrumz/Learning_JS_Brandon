@@ -115,7 +115,7 @@ function Index() {
             </div>
             <div className="s-left4">
               <div className="left-icons-main">
-              
+                {" "}
                 <p>Orders </p>
                 <ShoppingCart className="left-icons" />
               </div>
@@ -153,16 +153,16 @@ function Index() {
           </div>
           <div className="users-main-profile">
             <div className="profile-head">
-              <div style={{ width: "1px" }}>
+              <div style={{ width: "45px" }}>
                 <Users />
               </div>
-              <div style={{ width: "160px", marginLeft: "-50px" }}>
+              <div style={{ width: "160px", marginLeft: "-90px" }}>
                 <h3>User</h3>
               </div>
               <div style={{ width: "0px" }}>
                 <h3>Country</h3>
               </div>
-              <div style={{ width: "100px" }}>
+              <div style={{ width: "190px" }}>
                 <h3>Usage</h3>
               </div>
               <div>
@@ -175,7 +175,7 @@ function Index() {
                 key={index}
                 style={{ marginTop: ".5rem" }}
               >
-                <div style={{ width: "5px" }}>
+                <div style={{ width: "50px" }}>
                   <img
                     src={profile.pic}
                     style={{
@@ -185,7 +185,7 @@ function Index() {
                     }}
                   />
                 </div>
-                <div style={{ width: "230px", marginLeft: "-53px" }}>
+                <div style={{ width: "230px", marginLeft: "-90px" }}>
                   <b>{profile.name}</b>
                   <div>
                     {profile.type} <span>{profile.registered}</span>
@@ -199,10 +199,11 @@ function Index() {
                 </div>
                 <div
                   className="percent"
-                  style={{ width: "100px", marginLeft: "-100px" }}
+                  style={{ width: "180px", marginLeft: "-100px" }}
                 >
                   {profile.usage}
                   <div className="register">{profile.registered}</div>
+                  <div className="percent_bar"></div>
                 </div>
                 <div>
                   <p>{profile.last}</p>
