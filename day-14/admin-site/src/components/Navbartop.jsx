@@ -5,8 +5,7 @@ import { Search, Menu, Sun, MailOpen,
  } from 'lucide-react'
 import './navbar.css'
 import '../App.css'
-
-
+import Theme from './Theme'
 
 const Navbartop = () => {
   return (
@@ -21,7 +20,7 @@ const Navbartop = () => {
           <Bell className='icon2'/>
           <Logs className='icon2' />
           <MailOpen className='icon2' />         
-         <div className='sun'> <Sun /></div>
+         <div className='sun'> <Theme /> </div>
           <img src="#" />
           <Grip className='icon2'/>
           
