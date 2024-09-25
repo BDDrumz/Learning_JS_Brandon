@@ -6,6 +6,7 @@ import Colors from './components/Colors'
 import Topography from './components/Topography'
 import Navbartop from './components/Navbartop'
 import Navbarleft from './components/Navbarleft'
+import Map from './components/Map'
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
               <Route path='/Home' element={<Home />} />
               <Route path='/Colors' element={<Colors />} />
               <Route path='/Topography' element={<Topography />} />
-
+              <Route path='/Map' element={<Map/>}/> 
             </Routes>
           </div>
         </div>

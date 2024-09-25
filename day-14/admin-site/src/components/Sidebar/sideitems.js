@@ -1,12 +1,12 @@
 import {
     BookText,
     PieChart,
-    Grid3X3,
+
     Layers,
     Puzzle,
     Send,
     MapIcon,
-    ClipboardList,
+  
     Droplet,
     Pencil,
     Star,
@@ -133,7 +133,7 @@ const sidebarItems = [
         {
           text: "Google Maps",
           icon: MapIcon,
-          link: "/google",
+          link: "/Map",
           badge: "PRO"
         }
       ]

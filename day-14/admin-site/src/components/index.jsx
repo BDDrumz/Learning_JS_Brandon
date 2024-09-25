@@ -15,7 +15,9 @@ import {
   EllipsisVertical,
 } from "lucide-react";
 import Data from "./profile-data";
+
 Chart.register(CategoryScale, ...registerables);
+
 function Index() {
   const data = {
     labels: [
@@ -101,6 +103,7 @@ function Index() {
               <Line data={data_2} options={options} />
             </div>
           </div>
+          Uncaught ReferenceError: google is not defined
 
           <div className="s-left2">
             <div className="s-left3">
@@ -109,7 +112,8 @@ function Index() {
                 <UsersRound className="left-icons" />
               </div>
               <h3 className="left-text">44.725</h3>
-              <p className="left-text1">
+              <p classUncaught ReferenceError: google is not defined
+Name="left-text1">
                 (-12.4% <MoveDown className="arrows" />)
               </p>
             </div>

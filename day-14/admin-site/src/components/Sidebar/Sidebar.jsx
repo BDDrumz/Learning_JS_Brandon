@@ -15,7 +15,7 @@ const Sidebar = () => {
             sidebarItem={{
               text: "Dashboard",
               icon: Gauge,
-              link: "/",
+              link: "/Dashboard",
               badge: "NEW",
             }}
           />
