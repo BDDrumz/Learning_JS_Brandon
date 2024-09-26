@@ -1,26 +1,31 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import { Sun } from "lucide-react";
+import "../App.css";
+
+// Creating the context
 const ThemeContext = createContext();
 
-function Theme() {
-  const [darkMode, setDarkMode] = useState(false);
+// To create a custom hook that stores the context created above
+export const useTheme = ()=> useContext(ThemeContext);
+//  create the provider that will provide the different states in the app
+export const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState("light");
+  useEffect(() => {
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme) {
+      setTheme(currentTheme);
+    }
+  }, []);
 
-  function ThemeToggle() {
-  const {darkMode, setDarkMode } = useContext(ThemeContext);
-    setDarkMode((prevDarkMode) => !prevDarkMode);
-  }
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+  };
+
   return (
-    <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
-      <div>
-        <ThemeToggle />
-        <button
-          onClick={() => setDarkMode(darkMode === "light" ? "dark" : "light")}
-        >
-          <Sun />
-        </button>
-      </div>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
     </ThemeContext.Provider>
   );
-}
-
-export default Theme;
+};

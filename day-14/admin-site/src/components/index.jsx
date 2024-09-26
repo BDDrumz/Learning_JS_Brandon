@@ -103,8 +103,7 @@ function Index() {
               <Line data={data_2} options={options} />
             </div>
           </div>
-          Uncaught ReferenceError: google is not defined
-
+           
           <div className="s-left2">
             <div className="s-left3">
               <div className="left-icons-main">
@@ -112,20 +111,19 @@ function Index() {
                 <UsersRound className="left-icons" />
               </div>
               <h3 className="left-text">44.725</h3>
-              <p classUncaught ReferenceError: google is not defined
-Name="left-text1">
-                (-12.4% <MoveDown className="arrows" />)
+              <p className="left-text1">
+                (-12.4<MoveDown/> )
               </p>
             </div>
             <div className="s-left4">
               <div className="left-icons-main">
-                {" "}
+                
                 <p>Orders </p>
                 <ShoppingCart className="left-icons" />
               </div>
               <h3 className="left-text">385</h3>
               <p className="left-text2">
-                (17.2% <MoveUp className="arrows" />){" "}
+                (17.2% <MoveUp className="arrows" />)
               </p>
             </div>
           </div>

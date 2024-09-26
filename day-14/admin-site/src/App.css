@@ -3,25 +3,38 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --background-color: #141414;
+    --text-color: #ffffff;
+    --foreground-color: #ffffff;
+    --fg-text: #000000
+}
 
 .main{
     display: flex;
 }
-
-.container_left{
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-    height: 100vh;
-    background-color:  #212631;;
-    padding: 1rem;
-
+.app{
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    padding: 2% 2%;
 }
+.theme-dark{
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
 .container_right{
     margin-left: 17.5rem;
     width: 85%;
     background: whitesmoke;
     
+}
+@media only screen and (max-width=980px) {
+    .menu{
+        display: flex;
+    }
+    .container_left{
+        display: none;
+    }
 }

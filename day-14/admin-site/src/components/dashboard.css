@@ -43,7 +43,6 @@
 .s-left4 {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
     width: 237px;
     height: 10rem;
     background: white;
@@ -52,12 +51,15 @@
 }
 .left-icons-main{
     display: flex;
-    gap: 7rem;
+    gap: 5rem;
     padding: 1rem;
+    
 }
+
 .left-text,
 .left-text1,
 .left-text2{
+       
     padding: .1rem 2rem ;
 }
 .left-text1{
@@ -66,9 +68,7 @@
 .left-text2{
     color: green;
 }
-.arrows{
-    width: 0px;
-}
+
 .sale-right {
     flex: 1;
     height: 30rem;
@@ -126,7 +126,10 @@
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    background-color: #656667;
+    background-color: #3e3f42;
+}
+.btn_add:hover{
+    background-color: #5c5d5f;
 }
 .add_btn{
     width: 20px;

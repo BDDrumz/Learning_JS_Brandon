@@ -7,19 +7,22 @@ import Topography from './components/Topography'
 import Navbartop from './components/Navbartop'
 import Navbarleft from './components/Navbarleft'
 import Map from './components/Map'
+import { useTheme } from './components/Theme'
 
 
 function App() {
 
+  const { theme } = useTheme()
+
   return (
     <>
       <BrowserRouter>
-        <div className="main">
+        <div className={`main app theme-${theme}`}>
           <div className="container_left">
             <Navbarleft />
           </div>
 
-          <div className="container_right">
+          <div className={`container_right`}>
             <Navbartop />
             <Routes>
               <Route path='/' element={<Index />} />

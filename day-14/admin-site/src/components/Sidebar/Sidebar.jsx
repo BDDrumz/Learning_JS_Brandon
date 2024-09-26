@@ -9,7 +9,7 @@ const Sidebar = () => {
 
   return ( 
     <div className="w-full mt-4">
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-4">
         <div className="w-full">
           <SidebarItem
             sidebarItem={{
