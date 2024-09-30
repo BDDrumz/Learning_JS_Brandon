@@ -24,7 +24,7 @@ export const SidebarDropdownItem = ({ sidebarItem }) => {
   const [isDropdown, setIsDropdown] = useState(false);
   return (
     <>
-      <div className="flex w-full items-center rounded-md gap-2 px-3 hover:bg-slate-500 py-4">
+      <div className="flex w-full items-center rounded-md gap-2 px-3 hover:bg-slate-500 py-4 ">
         <div className="flex items-center justify-center">
           <sidebarItem.icon className="w-5 h-5" />
         </div>

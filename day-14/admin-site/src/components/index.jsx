@@ -228,7 +228,7 @@ function Index() {
             </div>
             <span className="p-4 text-white  ">Users</span>
           </div>
-          
+
           <div className="conversation p-4 text-white  ">
             <div className="users-converse">
               <h3 className="text-2xl font-bold ">2.49%</h3>
@@ -240,7 +240,19 @@ function Index() {
               </div>
             </div>
           </div>
-          <div className="sessions p-4 text-white  ">Sessions</div>
+
+          <div className="sessions p-4 text-white  ">
+            <div className="users-converse">
+            <h3 className="text-2xl font-bold ">2.49%</h3>
+            <p className="text-xs">
+              (84.7% <MoveUp className="arrows text-xs inline " />)
+            </p>
+            <div className="ellipsis">
+              <EllipsisVertical />
+            </div>
+            </div>
+            
+          </div>
         </div>
       </div>
       <div className="traffic-main">

@@ -31,7 +31,7 @@
     --border:none;
 }
 .container_left{
-    width: 15%;
+    min-width: 15%;
 }
 .container_right{  
     min-width: 85%;
