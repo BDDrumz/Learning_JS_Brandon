@@ -1,3 +1,4 @@
+import { Moon, MoonIcon, Pencil, Sun } from "lucide-react";
 import { useTheme } from "./Theme";
 
 
@@ -7,7 +8,7 @@ const ToggleButton = () => {
   
     return (
       <button onClick={toggleTheme}>
-        Switch to {theme === "light" ? "dark" : "light"}
+        { theme === "light"? <MoonIcon/>: <Sun/>}
       </button>
     );
   };

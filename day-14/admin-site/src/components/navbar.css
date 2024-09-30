@@ -5,7 +5,8 @@
   align-items: center;
   width: 85%;
   height: 4rem;
-  background: white;
+  background:  var(--sec-col);
+  border: 1px solid var(--border);
 }
 .nav-left {
   display: flex;
@@ -19,21 +20,21 @@
   width: 100%;
   height: 3rem;
   border-radius: 10px;
-  background: whitesmoke;
+  background:  var(--sec-col);
 }
 .searchInput {
   width: 100%;
   height: 3rem;
   border: none;
   border-radius: 10px;
-  background: whitesmoke;
+  background:  var(--sec-col);
 }
 .iconSearch {
   display: flex;
   width: 20px;
 }
 .menu {
-  display: none;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;

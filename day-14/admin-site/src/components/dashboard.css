@@ -2,7 +2,7 @@
     padding: 1rem;
     font-size: 30px;
     font-weight: bold;
-    color:  #212631 !important;
+    color: var(--text-color);
 }
 .home{
     margin-left: 1rem;
@@ -27,8 +27,9 @@
 .s-left1 {
     width: 490px;
     height: 19rem;
-    background: white;
+    background: var(--sec-col);
     border-radius: 10px;
+    border: solid 1px var(--border);
     
 }
 
@@ -45,8 +46,9 @@
     flex-direction: column;
     width: 237px;
     height: 10rem;
-    background: white;
+    background: var(--sec-col);
     border-radius: 10px;
+    border: solid 1px var(--border)
     
 }
 .left-icons-main{
@@ -60,21 +62,27 @@
 .left-text1,
 .left-text2{
        
-    padding: .1rem 2rem ;
+    padding: .5rem 2rem ;
 }
 .left-text1{
+    
     color: red;
 }
 .left-text2{
     color: green;
+}
+.arrows{
+    display: inline;
+    width: 20px;
 }
 
 .sale-right {
     flex: 1;
     height: 30rem;
     margin: 2rem 1rem;
-    background: white;
+    background: var(--sec-col);
     border-radius: 10px;
+    border: solid 1px var(--border)
 }
 .bar-graph{
     padding: 2rem 2rem;
@@ -94,9 +102,9 @@
     border-radius: 10px;
     margin: 1rem;
     height: 37.5rem;
-    background-color: white;
+    background: var(--sec-col);
     flex: 1;
-    
+    border: solid 1px var(--border)
 
 }
 .left-icons{
@@ -157,7 +165,10 @@
     
 
 }
-
+.Users-head{
+    font-size: 25px;
+    font-weight: bold;
+}
 .users-num{
     background: rgb(68, 139, 255) ;
 }
@@ -175,18 +186,37 @@
     margin: 1rem;
     border-radius: 5px;
 }
+.users-converse{
+    display: flex;
+
+}
 .users-num-info{
     display: flex;
-    gap: 3rem;
+    align-items: center;
     padding: 1rem;
     color: white;
 }
+.ellipsis{
+    margin-left: 4rem;
+}
 .traffic-main{
-    width: 97%;
+
+    width: 98%;
     height: 40rem;
     border-radius: 5px;
-    background: white;
+    background: var(--sec-col);
     margin: 1rem;
+    border: solid 1px var(--border)
+}
+.traffic{
+    height: 7rem;
+    border-bottom: 1px solid gray;
+    padding: 1rem;
+    margin: 2rem;
+}
+.traffic h3{
+    font-size: 30px;
+    font-weight: bold;
 }
 .percent{
     display: flex;
@@ -200,4 +230,16 @@
 .countyImg{
     display: flex;
     align-items: center;
+}
+
+@media (max-width:980px){
+    .sale-main{
+        display: block;
+    }
+    .sale-left{
+        display: flex;
+    }
+    .menu{
+        display: flex;
+    }
 }

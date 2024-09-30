@@ -96,14 +96,14 @@ function Index() {
       <div className="sale-main">
         <div className="sale-left">
           <div className="s-left1">
-            <h3> Sale</h3>
+            <h3 className="text-2xl font-semibold p-1"> Sale</h3>
             <p>January - July 2023</p>
             <div>
               {" "}
               <Line data={data_2} options={options} />
             </div>
           </div>
-           
+
           <div className="s-left2">
             <div className="s-left3">
               <div className="left-icons-main">
@@ -112,12 +112,12 @@ function Index() {
               </div>
               <h3 className="left-text">44.725</h3>
               <p className="left-text1">
-                (-12.4<MoveDown/> )
+                (-12.4
+                <MoveDown className="arrows" /> )
               </p>
             </div>
             <div className="s-left4">
               <div className="left-icons-main">
-                
                 <p>Orders </p>
                 <ShoppingCart className="left-icons" />
               </div>
@@ -129,7 +129,7 @@ function Index() {
           </div>
         </div>
         <div className="sale-right">
-          <h3>Traffic</h3>
+          <h3 className="text-2xl font-semibold p-1">Traffic</h3>
           <p>January 01, 2023 - December 31, 2023</p>
           <div className="bar-graph">
             <Bar data={data} options={options} />
@@ -141,8 +141,7 @@ function Index() {
         <div className="users-left">
           <div className="users">
             <div>
-              {" "}
-              <h2>Users</h2>
+              <h2 className="Users-head">Users</h2>
               <p>1.232.150 registered users</p>
             </div>
             <div>
@@ -219,19 +218,42 @@ function Index() {
         <div className="users-right">
           <div className="users-num">
             <div className="users-num-info">
+              <h3 className="text-2xl font-bold ">26k</h3>
               <p>
-                h3(-12.4% <MoveDown className="arrows" />)
+                (-12.4% <MoveDown className="arrows" />)
               </p>
-              <EllipsisVertical />
+              <div className="ellipsis">
+                <EllipsisVertical />
+              </div>
             </div>
-            <span>Users</span>
+            <span className="p-4 text-white  ">Users</span>
           </div>
-          <div className="conversation">Conversations</div>
-          <div className="sessions">Sessions</div>
+          
+          <div className="conversation p-4 text-white  ">
+            <div className="users-converse">
+              <h3 className="text-2xl font-bold ">2.49%</h3>
+              <p className="text-xs">
+                (84.7% <MoveUp className="arrows text-xs inline " />)
+              </p>
+              <div className="ellipsis">
+                <EllipsisVertical />
+              </div>
+            </div>
+          </div>
+          <div className="sessions p-4 text-white  ">Sessions</div>
         </div>
       </div>
       <div className="traffic-main">
-        <div className="traffic">traffic</div>
+        <div className="traffic">
+          <h3>Traffic</h3>
+          <p>Last</p>
+          <div className="flex pt-10 justify-between gap-1">
+            <div>New Client</div>
+            <div>Recurring Client</div>
+            <div>Pageviews</div>
+            <div>Organic</div>
+          </div>
+        </div>
       </div>
     </div>
   );
