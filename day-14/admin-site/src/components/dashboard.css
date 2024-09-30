@@ -236,10 +236,6 @@
     .sale-main{
         display: block;
     }
-    .sale-left{
-        display: flex;
-    }
-    .menu{
-        display: flex;
-    }
+    
+    
 }
