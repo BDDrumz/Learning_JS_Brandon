@@ -21,7 +21,7 @@ const sidebarItems = [
         {
           text: "Color",
           icon: Droplet,
-          link: "/color"
+          link: "/Colors"
         },
         {
           text: "Typography",
