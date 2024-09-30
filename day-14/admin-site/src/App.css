@@ -13,7 +13,8 @@
     
 }
 .main{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 5.7fr;
 }
 .app{
     min-height: 100vh;
@@ -29,10 +30,12 @@
     --text-color: #000;
     --border:none;
 }
-
-.container_right{
-    margin-left: 17.2rem;
+.container_left{
+    width: 15%;
+}
+.container_right{  
     min-width: 85%;
+    background-color: whitesmoke;
     color: var(--text-color);
     background-color: var(--background-color);
 }
