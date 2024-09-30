@@ -236,6 +236,11 @@
     .sale-main{
         display: block;
     }
-    
+    .sale-left{
+        display: flex;
+    }
+    .s-left2{
+        display: flex;
+    }
     
 }
