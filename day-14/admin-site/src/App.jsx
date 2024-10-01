@@ -8,9 +8,14 @@ import Navbartop from './components/Navbartop'
 import Navbarleft from './components/Navbarleft'
 import Map from './components/Map'
 import { useTheme } from './components/Theme'
+import { useState } from 'react'
 
 
 function App() {
+  const[opennav, setopennav]=useState(false)
+  const togglenav=()=>{
+    setopennav(!opennav)
+  }
 
   const { theme } = useTheme()
 
@@ -19,11 +24,11 @@ function App() {
       <BrowserRouter>
         <div className={`main app theme-${theme}`}>
           <div className="container_left">
-            <Navbarleft />
+            <Navbarleft opennav={opennav}/>
           </div>
 
           <div className={`container_right`}>
-            <Navbartop />
+            <Navbartop togglenav={togglenav}/>
             <Routes>
               <Route path='/' element={<Index />} />
               <Route path='/Dashboard' element={<Index />} />

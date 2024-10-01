@@ -4,10 +4,10 @@ import "../App.css";
 import { sidebarItems } from "./sidebar";
 import Sidebar from "./Sidebar/Sidebar";
 
-const Navbarleft = () => {
+const Navbarleft = ({opennav}) => {
   const navItems = sidebarItems;
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${opennav ? 'open':'close'}`}>
       <div className="BD">
         <h1>@BrandonTech</h1>
       </div>

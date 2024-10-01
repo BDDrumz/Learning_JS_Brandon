@@ -6,7 +6,7 @@ import { Gauge} from "lucide-react";
 // Main Sidebar Component
 const Sidebar = () => {
   const navItems = sidebarItems
-
+  
   return ( 
     <div className="w-full mt-4">
       <div className="flex flex-col gap-4">

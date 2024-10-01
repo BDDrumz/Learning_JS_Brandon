@@ -5,13 +5,13 @@ import "./navbar.css";
 import "../App.css";
 import ToggleButton from "./ToggleBtn";
 
-const Navbartop = () => {
+const Navbartop = ({togglenav}) => {
   return (
     <div className="Navbartop">
       <div className="nav-left">
         <div className="menu">
           {" "}
-          <Menu />
+          <Menu onClick={togglenav}/>
         </div>
         <div className="searchbar">
           <Search className="iconSearch ml-6" />

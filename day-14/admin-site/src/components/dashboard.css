@@ -241,7 +241,7 @@
     .s-left3{
         min-width: 48%;
     }
-    .s-left4{
+    .s-left4{ 
         min-width: 50%;
     }
     .s-left2{
@@ -255,10 +255,12 @@
     }
     .users-main{
         display: block;
-        min-width: 100%;
+        min-width: 102%;
+        
     }
     .users-right{
         display: flex;
         min-width: 50%;
     }
+
 }

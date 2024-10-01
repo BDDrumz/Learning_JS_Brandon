@@ -9,10 +9,18 @@
     padding: 1rem;
     color: #fff;
     border: 1px solid var(--border);
+    z-index: 100;
 }
 @media (max-width:980px){
     .sidebar{
-        display: none;
+        left: -1000px;
         position: fixed;
+        transition: ease-in-out 0.5s;
+    }
+    .sidebar.open{
+        left: 0;
+    }
+    .sidebar.close{
+        left: -1000px;
     }
 }

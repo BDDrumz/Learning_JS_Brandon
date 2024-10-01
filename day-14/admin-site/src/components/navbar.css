@@ -72,4 +72,12 @@
   .nav-right div.nav-item{
     display: none;
   }
+  .searchbar{
+    width:50% ;
+  }
+}
+@media (max-width:575px){
+  .searchbar{
+    display: none;
+  }
 }
