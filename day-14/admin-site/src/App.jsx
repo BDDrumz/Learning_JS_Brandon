@@ -8,8 +8,8 @@ import Navbartop from './components/Navbartop'
 import Navbarleft from './components/Navbarleft'
 import Map from './components/Map'
 import { useTheme } from './components/Theme'
+import OutsideClickHandler from 'react-outside-click-handler';
 import { useState } from 'react'
-
 
 function App() {
   const[opennav, setopennav]=useState(false)
@@ -23,9 +23,11 @@ function App() {
     <>
       <BrowserRouter>
         <div className={`main app theme-${theme}`}>
+        <OutsideClickHandler onOutsideClick={()=>{setopennav(false)}}>
           <div className="container_left">
             <Navbarleft opennav={opennav}/>
           </div>
+          </OutsideClickHandler>
 
           <div className={`container_right`}>
             <Navbartop togglenav={togglenav}/>
