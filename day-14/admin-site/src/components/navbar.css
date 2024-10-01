@@ -20,21 +20,21 @@
   justify-content: space-between;
   min-width: 100%;
   border-radius: 10px;
-  background:  var(--sec-col);
+  background-color:  #414754;
 }
 .searchInput {
   width: 100%;
   height: 3rem;
   border: none;
   border-radius: 10px;
-  background:  var(--sec-col);
+  background: none;
 }
 .iconSearch {
   display: flex;
-  width: 20px;
+  width: 30px;
 }
 .menu {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -59,4 +59,17 @@
 .icon2 {
   cursor: pointer;
   color: gray;
+}
+@media (max-width:980px){
+  .menu{
+    display: flex;
+  }
+  .Navbartop{
+    min-width: 100%;
+  }
+}
+@media (max-width:765px){
+  .nav-right div.nav-item{
+    display: none;
+  }
 }

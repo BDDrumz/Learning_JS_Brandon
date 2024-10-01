@@ -19,20 +19,21 @@ const Colors = () => {
         </Link>
       </div>
 
-      <div className="flex text-center m-4 p-1  rounded bg-slate-200">
+      <div className="theme-text flex text-center pl-4 m-4 p-2  rounded ">
         Theme Colors
       </div>
-      <div className=" flex flex-wrap pl-4 gap-12 h-screen m-4 bg-white">
+      <div className="theme-div flex flex-wrap pl-4 gap-12 h-screen m-4 ">
+          
           {colorItems.map((color, index) =>
             <div className="" style={{}}>
               <div className="h-40 w-40 rounded " style={{background:color.bg,
-            marginTop:"2rem" 
+            marginTop:"1rem" 
           }}>
             
           </div>
-          <div>
+          <div className="themes-text">
           {color.name} <br />
-          <h3 className="p-4 border-b-2 " style={{}}><span className="" style={{color:"gray"}}>HEX:</span> <span className="p-4">{color.hex} </span><br /></h3>
+          <h3 className="p-4 border-b-2 " style={{color:"var(--text-color)"}}><span className="" style={{color:"gray"}}>HEX:</span> <span className="p-4">{color.hex} </span><br /></h3>
           <h3 className="p-4 border-b-2"><span className="" style={{color:"grey"}}>RGB:</span> <span className="p-4">{color.rgb}</span></h3>
           </div>
             </div>

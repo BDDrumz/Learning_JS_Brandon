@@ -11,7 +11,9 @@
     --sec-col:#212631;
     --border:gray;
     
+
 }
+
 .main{
     display: grid;
     grid-template-columns: 1fr 5.7fr;

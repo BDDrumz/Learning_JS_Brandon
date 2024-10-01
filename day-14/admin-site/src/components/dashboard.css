@@ -239,7 +239,7 @@
         height: 100%;
     }
     .s-left3{
-        min-width: 50%;
+        min-width: 48%;
     }
     .s-left4{
         min-width: 50%;
@@ -248,7 +248,7 @@
         display: flex;
     }
     .sale-right{
-        width: 100%;
+        min-width: 98%;
     }
     .main{
         display: block;
