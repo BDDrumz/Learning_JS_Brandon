@@ -28,7 +28,7 @@ function App() {
               <Route path='/' element={<Index />} />
               <Route path='/Dashboard' element={<Index />} />
               <Route path='/Home' element={<Home />} />
-              <Route path='/Colors' element={<Colors />} />
+              <Route path='/Colors' element={<Colors/>} />
               <Route path='/Topography' element={<Topography />} />
               <Route path='/Map' element={<Map/>}/> 
             </Routes>

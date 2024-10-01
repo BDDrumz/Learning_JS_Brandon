@@ -1,8 +1,9 @@
 import React from "react";
 import "../App.css";
-import "../Colors.css";
+import "../components/ColorItems";
 import { Link } from "react-router-dom";
-import colorItems from "./Colors";
+import colorItems from "./ColorItems";
+import "../Colors.css"
 
 const Colors = () => {
   return (
@@ -21,7 +22,7 @@ const Colors = () => {
       <div className="flex text-center m-4 p-1  rounded bg-slate-200">
         Theme Colors
       </div>
-      <div className="flex pl-4 gap-12 h-screen m-4 bg-white">
+      <div className=" flex flex-wrap pl-4 gap-12 h-screen m-4 bg-white">
           {colorItems.map((color, index) =>
             <div className="" style={{}}>
               <div className="h-40 w-40 rounded " style={{background:color.bg,
