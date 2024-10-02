@@ -3,7 +3,7 @@ import "../App.css";
 import "../components/ColorItems";
 import { Link } from "react-router-dom";
 import colorItems from "./ColorItems";
-import "../Colors.css"
+import "../Colors.css";
 
 const Colors = () => {
   return (
@@ -18,27 +18,44 @@ const Colors = () => {
           Theme
         </Link>
       </div>
+    <div className="theme-colors m-4 bg-white h-4/5">
+        <div className="theme-text h-8 pl-4 border-b-2">
+          Theme-Colors
+        </div>
+        <div>
+        <div className=" theme-div  pl-4 gap-12 h-screen m-4 ">
+        {colorItems.map((color, index) => (
+          <div className="" style={{}}>
+            <div
+              className="h-40 w-40 rounded "
+              style={{ background: color.bg, marginTop: "1rem" }}
+            ></div>
 
-      <div className="theme-text flex text-center pl-4 m-4 p-2  rounded ">
-        Theme Colors
-      </div>
-      <div className=" flex  theme-div  pl-4 gap-12 h-screen m-4 ">
-          <div className="">Theme Colors</div>
-          {colorItems.map((color, index) =>
-            <div className="" style={{}}>
-              <div className="h-40 w-40 rounded " style={{background:color.bg,
-            marginTop:"1rem" 
-          }}>
-            
-          </div>
-          <div className="themes-text">
-          {color.name} <br />
-          <h3 className="p-4 border-b-2 " style={{color:"var(--text-color)"}}><span className="" style={{color:"gray"}}>HEX:</span> <span className="p-4">{color.hex} </span><br /></h3>
-          <h3 className="p-4 border-b-2"><span className="" style={{color:"grey"}}>RGB:</span> <span className="p-4">{color.rgb}</span></h3>
-          </div>
+            <div className="themes-text">
+              {color.name} <br />
+              <h3
+                className="p-4 border-b-2 "
+                style={{ color: "var(--text-color)" }}
+              >
+                <span className="" style={{ color: "gray" }}>
+                  HEX:
+                </span>{" "}
+                <span className="p-4">{color.hex} </span>
+                <br />
+              </h3>
+              <h3 className="p-4 border-b-2">
+                <span className="" style={{ color: "grey" }}>
+                  RGB:
+                </span>{" "}
+                <span className="p-4">{color.rgb}</span>
+              </h3>
             </div>
-          )}
+          </div>
+        ))}
+
       </div>
+        </div>
+    </div>
     </div>
   );
 };

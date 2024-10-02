@@ -12,18 +12,20 @@
 .colors-main{
     padding: 4rem 8rem;
 }
-.theme-text{
-    border: solid 1px var(--border);
-    background-color: whitesmoke;
-    background: var(--sec-col);
-    color:"var(--text-color)";
-}
+
 .themes-text{
-    color:"var(--text-color)";
+    color:var(--text-color);
 }
-.theme-div {
+.theme-colors > div {
     border-radius: 5px;
     background-color: whitesmoke;
     border: solid 1px var(--border);
     background: var(--sec-col);
+}
+.theme-div{
+    display: flex;
+    
+    
+    
+
 }
