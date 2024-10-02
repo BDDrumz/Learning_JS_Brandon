@@ -11,6 +11,7 @@ import { useTheme } from './components/Theme'
 import OutsideClickHandler from 'react-outside-click-handler';
 import { useState } from 'react'
 import Charts from './components/Charts'
+import Calender from './components/Calender'
 
 function App() {
   const[opennav, setopennav]=useState(false)
@@ -40,6 +41,7 @@ function App() {
               <Route path='/Topography' element={<Topography />} />
               <Route path='/Map' element={<Map/>}/> 
               <Route path='/Charts' element={<Charts/>}/>
+              <Route path='/Calender' element={<Calender/>}/>
             </Routes>
           </div>
         </div>

@@ -122,7 +122,7 @@ const sidebarItems = [
         {
           text: "Calendar",
           icon: Calendar,
-          link: "/calendar",
+          link: "/Calender",
           badge: "PRO"
         },
         {

@@ -10,6 +10,7 @@
     --fg-text: #000000;
     --sec-col:#212631;
     --border:gray;
+    --bg-color:var(--sec-col);
     
 
 }
@@ -31,6 +32,8 @@
     --sec-col:white;
     --text-color: #000;
     --border:none;
+    --bg-color:#e3e3e3;
+    
 }
 .container_left{
     min-width: 15%;
