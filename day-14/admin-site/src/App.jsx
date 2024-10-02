@@ -10,6 +10,7 @@ import Map from './components/Map'
 import { useTheme } from './components/Theme'
 import OutsideClickHandler from 'react-outside-click-handler';
 import { useState } from 'react'
+import Charts from './components/Charts'
 
 function App() {
   const[opennav, setopennav]=useState(false)
@@ -38,6 +39,7 @@ function App() {
               <Route path='/Colors' element={<Colors/>} />
               <Route path='/Topography' element={<Topography />} />
               <Route path='/Map' element={<Map/>}/> 
+              <Route path='/Charts' element={<Charts/>}/>
             </Routes>
           </div>
         </div>

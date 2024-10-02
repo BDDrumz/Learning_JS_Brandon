@@ -22,8 +22,8 @@ const Colors = () => {
       <div className="theme-text flex text-center pl-4 m-4 p-2  rounded ">
         Theme Colors
       </div>
-      <div className="theme-div flex flex-wrap pl-4 gap-12 h-screen m-4 ">
-          
+      <div className=" flex  theme-div  pl-4 gap-12 h-screen m-4 ">
+          <div className="">Theme Colors</div>
           {colorItems.map((color, index) =>
             <div className="" style={{}}>
               <div className="h-40 w-40 rounded " style={{background:color.bg,

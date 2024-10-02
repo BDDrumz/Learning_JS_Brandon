@@ -1,0 +1,14 @@
+.charts-main h1{
+    padding: 1rem;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.home{
+    margin-left: 1rem;
+    font-size: bold;
+    color: rgb(63, 129, 227);
+}
+.charts-main{
+    padding: 4rem 6rem; 
+}
