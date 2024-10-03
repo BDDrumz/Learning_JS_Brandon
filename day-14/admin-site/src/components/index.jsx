@@ -95,15 +95,17 @@ function Index() {
       </div>
       <div className="sale-main">
         <div className="sale-left">
+
+          {/*  Sales graph line graph */}
           <div className="s-left1">
             <h3 className="text-2xl font-semibold p-1"> Sale</h3>
             <p>January - July 2023</p>
-            <div>
-              {" "}
+            <div>    
               <Line data={data_2} options={options} />
             </div>
           </div>
-
+          
+            {/* Customers and Orders graph  */}
           <div className="s-left2">
             <div className="s-left3">
               <div className="left-icons-main">
@@ -111,7 +113,7 @@ function Index() {
                 <UsersRound className="left-icons" />
               </div>
               <h3 className="left-text">44.725</h3>
-              <p className="left-text1">
+              <p className="left-text1 text-pretty">
                 (-12.4
                 <MoveDown className="arrows" /> )
               </p>
@@ -119,7 +121,7 @@ function Index() {
             <div className="s-left4">
               <div className="left-icons-main">
                 <p>Orders </p>
-                <ShoppingCart className="left-icons" />
+                <ShoppingCart className="left-icons ml-8" />
               </div>
               <h3 className="left-text">385</h3>
               <p className="left-text2">
@@ -128,6 +130,8 @@ function Index() {
             </div>
           </div>
         </div>
+        
+        {/* Traffic bar graph */}
         <div className="sale-right">
           <h3 className="text-2xl font-semibold p-1">Traffic</h3>
           <p>January 01, 2023 - December 31, 2023</p>
@@ -136,7 +140,8 @@ function Index() {
           </div>
         </div>
       </div>
-
+        
+        {/* Registered Users  */}
       <div className="users-main">
         <div className="users-left">
           <div className="users">
@@ -157,16 +162,16 @@ function Index() {
               <div style={{ width: "45px" }}>
                 <Users />
               </div>
-              <div style={{ width: "160px", marginLeft: "-90px" }}>
+              <div className="uSer" style={{ width: "160px", marginLeft: "-90px" }}>
                 <h3>User</h3>
               </div>
-              <div style={{ width: "0px" }}>
+              <div className="county" style={{ width: "0px"  }}>
                 <h3>Country</h3>
               </div>
-              <div style={{ width: "190px" }}>
+              <div className="usage" style={{ width: "190px" }}>
                 <h3>Usage</h3>
               </div>
-              <div>
+              <div className="activity">
                 <h3>Activity</h3>
               </div>
             </div>
@@ -214,13 +219,14 @@ function Index() {
             ))}
           </div>
         </div>
-
+        
+            {/* Traffic  second Div */}
         <div className="users-right">
           <div className="users-num">
             <div className="users-num-info">
               <h3 className="text-2xl font-bold ">26k</h3>
               <p>
-                (-12.4% <MoveDown className="arrows" />)
+                (-12.4% <MoveDown className="arrows " />)
               </p>
               <div className="ellipsis">
                 <EllipsisVertical />
@@ -255,6 +261,8 @@ function Index() {
           </div>
         </div>
       </div>
+      
+      {/* Traffic main new client  */}
       <div className="traffic-main">
         <div className="traffic">
           <h3>Traffic</h3>

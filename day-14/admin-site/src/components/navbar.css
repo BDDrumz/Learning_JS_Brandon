@@ -15,7 +15,7 @@
 .searchbar {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
   margin-left: 0.7rem;
   justify-content: space-between;
   width: 100%;
@@ -65,7 +65,7 @@
     display: flex;
   }
   .Navbartop{
-    min-width: 100%;
+    width: 100%;
   }
 }
 @media (max-width:765px){
@@ -73,7 +73,7 @@
     display: none;
   }
   .searchbar{
-    min-width:50% ;
+    width:70% ;
   }
 }
 @media (max-width:575px){

@@ -93,8 +93,10 @@
 
 
 .users-main {
+
     display: flex;
     gap: 1rem;
+    min-width: 100%;
 }
 
 .users-left {
@@ -109,7 +111,9 @@
 .left-icons{
     width: 40px;
     border-radius:skyblue;
-  
+    border-radius: 7px;
+    
+    background-color: rgb(86, 206, 253);
 }
 
 .users {    
@@ -255,12 +259,56 @@
     }
     .users-main{
         display: block;
-        min-width: 102%;
-        
+        width: auto;
+    }
+    .users{
+        padding: 1rem;
+        margin: 0rem;
     }
     .users-right{
         display: flex;
+        
+        min-width: 35%;
+    }
+    .btn_add{
+        font-size: medium;
+           
+    }
+    .profile-head{
+        margin-left: 2rem;
+    }
+    .profile-info{
+        margin-left: 2rem;
+        
+    }
+    
+    .county {
+        
+        margin-right: 6rem;
+    }
+     
+    
+    .activity{
+        padding-left: rem;
+    }
+    .users-num-info,
+    .users-converse{
+        display: flex;
+        
+    }
+}
+@media (max-width:765px){
+    .s-left1{
         min-width: 50%;
     }
-
+}
+@media (max-width:650px){
+    .left-icons-main{
+        gap: 1rem;
+    }
+}
+@media (max-width:535px){
+    .left-icons-main{
+        gap: 0rem;
+    }
 }
