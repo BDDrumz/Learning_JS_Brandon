@@ -12,3 +12,34 @@
 .charts-main{
     padding: 4rem 6rem; 
 }
+.chart{
+    background: var(--sec-col);
+    border: solid 1px var(--border);
+    width: 48%;
+}
+
+@media (max-width:975px){
+    .chart{
+        width: 47%;
+        height: 30vh;
+    }
+    
+}
+@media (max-width:1203px){
+    .chart{
+    width: 47%;
+    }
+}
+@media (max-width:757px){
+    .chart{
+    max-width: 45%;
+    }
+}
+@media (max-width:535px){
+    .chart{
+        width: 42%;
+    }
+    .chart h3{
+        font-size: small;
+    }
+}

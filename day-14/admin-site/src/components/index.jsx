@@ -121,7 +121,7 @@ function Index() {
             <div className="s-left4">
               <div className="left-icons-main">
                 <p>Orders </p>
-                <ShoppingCart className="left-icons ml-8" />
+                <ShoppingCart className="left-icons shopcart ml-8" />
               </div>
               <h3 className="left-text">385</h3>
               <p className="left-text2">
@@ -181,7 +181,7 @@ function Index() {
                 key={index}
                 style={{ marginTop: ".5rem" }}
               >
-                <div style={{ width: "50px" }}>
+                <div className="profilePic" style={{ width: "50px" }}>
                   <img
                     src={profile.pic}
                     style={{

@@ -1,7 +1,7 @@
 import React from "react";
 import "../components/Charts.css";
 import { Link } from "react-router-dom";
-import { Bar, Line, Pie, Doughnut } from "react-chartjs-2";
+import { Bar, Line, Pie, Doughnut, Chart } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -56,50 +56,6 @@ const Charts = () => {
     type: "pie",
     data: data3,
   };
-  // const data2 = {
-  //   datasets: [
-  //     {
-  //       label:"Red",
-  //       data:[100],
-  //       backgroundColor:"rgb(214, 88, 88)",
-  //       borderColor:"transparent",
-  //       fill:true,
-  //       borderWidth:2,
-  //     },
-  //     {
-  //       label:"Yellow",
-  //       data:[130],
-  //       backgroundColor:"yellow",
-  //       borderColor:"transparent",
-  //       fill:true,
-  //       borderWidth:2,
-  //     },
-  //     {
-  //       label:"Orange",
-  //       data:[40],
-  //       backgroundColor:"orange",
-  //       borderColor:"transparent",
-  //       fill:true,
-  //       borderWidth:2,
-  //     },
-  //     {
-  //       label:"Green",
-  //       data:[60],
-  //       backgroundColor:"green",
-  //       borderColor:"transparent",
-  //       fill:true,
-  //       borderWidth:2,
-  //     },
-  //     {
-  //       label:"Blue",
-  //       data:[30],
-  //       backgroundColor:"blue",
-  //       borderColor:"transparent",
-  //       fill:true,
-  //       borderWidth:2,
-  //     },
-  //   ],
-  // };
 
   const options = {
     scales: {
@@ -124,8 +80,8 @@ const Charts = () => {
         </Link>
       </div>
       <div className="chart-graph flex flex-wrap m-4 gap-8">
-        <div className="  max-h-96 bg-white" style={{ width: "48%" }}>
-          <div className="flex justify-between items-center p-4 h-8 border-b-2 bg-stone-400">
+        <div className="chart h-fit" style={{  }}>
+          <div className=" flex justify-between items-center p-4 h-8 border-b-2 bg-stone-400">
             <h3>Bar Chart</h3>
             <h3>Docs</h3>
           </div>
@@ -133,43 +89,43 @@ const Charts = () => {
             <Bar data={data1} options={options} />
           </div>
         </div>
-        <div className=" h-96 bg-white " style={{ width: "48%" }}>
-          <div className="flex items-center p-4 h-8 border-b-2 bg-stone-400">
+        <div className="chart h-fit  " style={{  }}>
+          <div className=" flex items-center p-4 h-8 border-b-2 bg-stone-400">
             <h3>Line Chart</h3>
           </div>
           <div className="p-4">
             <Line data={data} options={options} />
           </div>
         </div>
-        <div className=" bg-white " style={{ width: "48%" }}>
+        <div className="chart h-fit " style={{  }}>
           <div className="flex items-center p-4 h-8 border-b-2 bg-stone-400">
             <h3>Doughnut Chart</h3>
           </div>
-          <div>
+          <div className="p-4">
             <DoughnutChart />
           </div>
         </div>
-        <div className="h-full bg-white " style={{ width: "48%" }}>
+        <div className="chart h-full  " style={{  }}>
           <div className="flex items-center p-4 h-8 border-b-2 bg-stone-400">
             <h3>Pie Chart</h3>
           </div>
-          <div>
+          <div className="p-4">
             <PieChart />
           </div>
         </div>
-        <div className="  h-full bg-white " style={{ width: "48%" }}>
+        <div className="chart  h-full " style={{ }}>
           <div className="flex items-center p-4 h-8 border-b-2 bg-stone-400">
             <h3>Polar Area Chart</h3>
           </div>
           <div>
-            {/* <PolarChart/> */}
+            Polar Chart here
           </div>
         </div>
-        <div className="  h-ful bg-white " style={{ width: "48%" }}>
+        <div className="chart  h-ful  " style={{ width: "48%" }}>
           <div className="flex items-center p-4 h-8 border-b-2 bg-stone-400">
             <h3>Radar Chart</h3>
           </div>
-          graph 6
+          Radar Chart here
         </div>
       </div>
     </div>
@@ -240,33 +196,38 @@ const DoughnutChart = () => {
     </div>
   );
 };
-// component for the polar Chart chart
+//component for the polar Chart chart
 // const PolarChart = () => {
-//   const data = {
-//     labels: ["Red", "Orange", "Yellow", "Green", "Blue"],
-//     datasets: [
+//   const data = React.useMemo(
+//   ()=> [
+//     {
+//       label:"Series 1" ,
+//       data:[
+//         [ 0,10 ],
+//         [1.20],
+//         [2.30],
+//         [3,40],
+//         [4,50],
+//       ],
+//     },
+//   ],[]
+//   );
+  
+//   const axes = React.useMemo(
+//     ()=>[
+//       {primary:true, type:'linear',
+//         position:'bottom'
+//       },
 //       {
-//         label: "My first dataset",
-//         data: [85, 48, 34, 45,25],
-//         backgroundColor: [
-//           "red",
-//           "orange",
-//           "yellow",
-//           "green",
-//           "blue"
-//         ],
-//         hoverOffset: 4,
+//         type:'linear', position:'left'
 //       },
 //     ],
-//   };
-//   const config = {
-//     type: "polar",
-//     data: data,
-//   };
+//     []
+//   );
 
 //   return (
 //     <div className="w-90 h-90">
-//       <PolarChart data={data} />
+//       <Chart data={data} axes={axes} />
 //     </div>
 //   );
 // };
