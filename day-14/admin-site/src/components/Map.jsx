@@ -34,11 +34,9 @@ const Map = () => {
               <iframe
                 src="https://maps.google.com/maps?q=yaounde&amp;t=k&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
                 frameborder="0"
-                scrolling="no"
-                style={{width: "590px", height: "400px"}}
+                style={{width: "100%", height: "400px"}}
               ></iframe>
               <a href="https://fnfmods.net/fnf-silly-billy-vs-yourself/">
-                silly billy fnf
               </a>
             </div>
           </div>

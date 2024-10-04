@@ -16,5 +16,3 @@ color: rgb(63, 129, 227);
 .Map-container{
     height: 50vh;
 }
-/* <style>.mapouter{display:table;}.gmap_canvas{overflow:hidden;position:relative;height:400px;width:590px;background:#fff;}</style>
-<style>.gmap_canvas iframe{position:relative !important;z-index:2 !important;}.gmap_canvas a{color:#fff !important;position:absolute !important;top:0 !important;left:0 !important;z-index:0 !important;}</style> */
