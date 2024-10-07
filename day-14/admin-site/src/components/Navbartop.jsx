@@ -8,7 +8,9 @@ import ToggleButton from "./ToggleBtn";
 const Navbartop = ({togglenav}) => {
   return (
     <div className="Navbartop">
+      
       <div className="nav-left">
+        
         <div className="menu">
           {" "}
           <Menu onClick={togglenav}/>
@@ -31,6 +33,7 @@ const Navbartop = ({togglenav}) => {
         <img src="#" />
         <Grip className="icon2" />
       </div>
+      
     </div>
   );
 };

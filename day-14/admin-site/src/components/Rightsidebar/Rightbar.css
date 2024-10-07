@@ -1,0 +1,13 @@
+.rightbar{
+    height: 100vh;
+    width: 20rem;
+    margin-left: 72rem;
+    position: absolute;
+}
+.iconz{
+    color: gray;
+}
+.iconz:hover{
+    cursor: pointer;
+    color: rgb(97, 97, 227);
+}

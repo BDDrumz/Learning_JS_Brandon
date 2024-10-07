@@ -15,6 +15,7 @@ import {
   EllipsisVertical,
 } from "lucide-react";
 import Data from "./profile-data";
+import Rightbar from "./Rightsidebar/Rightbar";
 
 Chart.register(CategoryScale, ...registerables);
 
@@ -88,11 +89,15 @@ function Index() {
   return (
     <div className="dashboard-main">
       <div>
+        <Rightbar/>
+      </div>
+      <div>
         <h1> Dashboard</h1>
         <Link className="home" to={"/home"}>
           Home{" "}
         </Link>
       </div>
+      
       <div className="sale-main">
         <div className="sale-left">
 
